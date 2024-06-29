@@ -1,0 +1,42 @@
+.preloader__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  transition: opacity 0.5s;
+}
+.preloader__container--nested {
+  position: absolute;
+}
+.preloader__container--fast-animation {
+  transition-duration: 0.15s;
+}
+.preloader__container--visible {
+  opacity: 1;
+}
+.preloader__icon {
+  width: 120px;
+  height: 120px;
+  animation: preloader-rotation 0.6s cubic-bezier(0.86, 0, 0.07, 1) infinite;
+}
+@keyframes preloader-rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  70% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
