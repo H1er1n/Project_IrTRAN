@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html><head>
+    <title>Ведомости подачи и уборки - Тренажер ЭТРАН</title>
+
+    <!-- Браузер, не зажёвывай меня в кэш! -->
+    <meta http-equiv="cache-control" content="max-age=0">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT">
+    <meta http-equiv="pragma" content="no-cache">
+
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width">-->
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+<link href="./files/preloader.05e9578ddfc67dd3594c.css" rel="stylesheet"><link href="./files/main.5995fb6faa064b522a0a.css" rel="stylesheet"><link rel="stylesheet" type="text/css" href="./files/vendors.b640cc19cb0bc4cee48d.css"><style>.picker_wrapper.no_alpha .picker_alpha{display:none}.picker_wrapper.no_editor .picker_editor{position:absolute;z-index:-1;opacity:0}.picker_wrapper.no_cancel .picker_cancel{display:none}.layout_default.picker_wrapper{display:flex;flex-flow:row wrap;justify-content:space-between;align-items:stretch;font-size:10px;width:25em;padding:.5em}.layout_default.picker_wrapper input,.layout_default.picker_wrapper button{font-size:1rem}.layout_default.picker_wrapper>*{margin:.5em}.layout_default.picker_wrapper::before{content:"";display:block;width:100%;height:0;order:1}.layout_default .picker_slider,.layout_default .picker_selector{padding:1em}.layout_default .picker_hue{width:100%}.layout_default .picker_sl{flex:1 1 auto}.layout_default .picker_sl::before{content:"";display:block;padding-bottom:100%}.layout_default .picker_editor{order:1;width:6.5rem}.layout_default .picker_editor input{width:100%;height:100%}.layout_default .picker_sample{order:1;flex:1 1 auto}.layout_default .picker_done,.layout_default .picker_cancel{order:1}.picker_wrapper{box-sizing:border-box;background:#f2f2f2;box-shadow:0 0 0 1px silver;cursor:default;font-family:sans-serif;color:#444;pointer-events:auto}.picker_wrapper:focus{outline:none}.picker_wrapper button,.picker_wrapper input{box-sizing:border-box;border:none;box-shadow:0 0 0 1px silver;outline:none}.picker_wrapper button:focus,.picker_wrapper button:active,.picker_wrapper input:focus,.picker_wrapper input:active{box-shadow:0 0 2px 1px #1e90ff}.picker_wrapper button{padding:.4em .6em;cursor:pointer;background-color:#f5f5f5;background-image:linear-gradient(0deg, gainsboro, transparent)}.picker_wrapper button:active{background-image:linear-gradient(0deg, transparent, gainsboro)}.picker_wrapper button:hover{background-color:#fff}.picker_selector{position:absolute;z-index:1;display:block;-webkit-transform:translate(-50%, -50%);transform:translate(-50%, -50%);border:2px solid #fff;border-radius:100%;box-shadow:0 0 3px 1px #67b9ff;background:currentColor;cursor:pointer}.picker_slider .picker_selector{border-radius:2px}.picker_hue{position:relative;background-image:linear-gradient(90deg, red, yellow, lime, cyan, blue, magenta, red);box-shadow:0 0 0 1px silver}.picker_sl{position:relative;box-shadow:0 0 0 1px silver;background-image:linear-gradient(180deg, white, rgba(255, 255, 255, 0) 50%),linear-gradient(0deg, black, rgba(0, 0, 0, 0) 50%),linear-gradient(90deg, #808080, rgba(128, 128, 128, 0))}.picker_alpha,.picker_sample{position:relative;background:linear-gradient(45deg, lightgrey 25%, transparent 25%, transparent 75%, lightgrey 75%) 0 0/2em 2em,linear-gradient(45deg, lightgrey 25%, white 25%, white 75%, lightgrey 75%) 1em 1em/2em 2em;box-shadow:0 0 0 1px silver}.picker_alpha .picker_selector,.picker_sample .picker_selector{background:none}.picker_editor input{font-family:monospace;padding:.2em .4em}.picker_sample::before{content:"";position:absolute;display:block;width:100%;height:100%;background:currentColor}.picker_arrow{position:absolute;z-index:-1}.picker_wrapper.popup{position:absolute;z-index:2;margin:1.5em}.picker_wrapper.popup,.picker_wrapper.popup .picker_arrow::before,.picker_wrapper.popup .picker_arrow::after{background:#f2f2f2;box-shadow:0 0 10px 1px rgba(0,0,0,.4)}.picker_wrapper.popup .picker_arrow{width:3em;height:3em;margin:0}.picker_wrapper.popup .picker_arrow::before,.picker_wrapper.popup .picker_arrow::after{content:"";display:block;position:absolute;top:0;left:0;z-index:-99}.picker_wrapper.popup .picker_arrow::before{width:100%;height:100%;-webkit-transform:skew(45deg);transform:skew(45deg);-webkit-transform-origin:0 100%;transform-origin:0 100%}.picker_wrapper.popup .picker_arrow::after{width:150%;height:150%;box-shadow:none}.popup.popup_top{bottom:100%;left:0}.popup.popup_top .picker_arrow{bottom:0;left:0;-webkit-transform:rotate(-90deg);transform:rotate(-90deg)}.popup.popup_bottom{top:100%;left:0}.popup.popup_bottom .picker_arrow{top:0;left:0;-webkit-transform:rotate(90deg) scale(1, -1);transform:rotate(90deg) scale(1, -1)}.popup.popup_left{top:0;right:100%}.popup.popup_left .picker_arrow{top:0;right:0;-webkit-transform:scale(-1, 1);transform:scale(-1, 1)}.popup.popup_right{top:0;left:100%}.popup.popup_right .picker_arrow{top:0;left:0}</style><style>body {--auth-window-bg-color:#a3bfff;--auth-window-border-color:transparent;--auth-window-btn-bg-color:#3f6cb7;--auth-window-btn-color:#fff;--auth-window-header-bg-color:#a3bfff;--auth-window-header-color:#fff;--auth-window-input-bg-color:#fff;--auth-window-input-border-color:transparent;--auth-window-input-color:#000;--auth-window-input-focus-border-color:#2571cb;--auth-window-logo-height:0px;--auth-window-logo-width:0px;--button-active-bg-color:#245693;--button-active-color:#ffffff;--button-bg-color:#7da5f0;--button-disabled-bg-color:#efefef;--button-disabled-color:#999999;--button-font-color:#ffffff;--button-hover-bg-color:#5086d6;--button-hover-color:#ffffff;--button-primary-bg-color:#3e6cb4;--button-primary-color:#ffffff;--button-primary-focus-bg-color:#154175;--button-primary-focus-color:#ffffff;--button-primary-hover-bg-color:#2a5696;--button-primary-hover-color:#ffffff;--button-secondary-bg-color:#7da5f0;--button-secondary-color:#ffffff;--button-secondary-focus-bg-color:#245693;--button-secondary-focus-color:#ffffff;--button-secondary-hover-bg-color:#5086d6;--button-secondary-hover-color:#ffffff;--color-base:#7da5f0;--dialog-close-bg-color:transparent;--dialog-close-bg-color-hover:red;--dialog-close-cross-color:#fff;--dialog-close-height:28px;--dialog-close-width:48px;--dialog-header-bg-color:#7da5f0;--dialog-main-bg-color:#fff;--dialog-title-color:#fff;--doc-list-details-header-bg-color:#e8e8e8;--doc-list-details-input-active-bg-color:#ffffff;--doc-list-details-input-active-color:#ed5114;--doc-list-details-input-bg-color:#c0c0c0;--doc-list-details-input-color:#406eb0;--doc-list-details-input-focus-bg-color:#ffffff;--doc-list-details-input-focus-color:#406eb0;--doc-list-editor-add-group-btn-color:#454545;--doc-list-editor-add-group-btn-hover-color:#171717;--doc-list-editor-borders-color:#c1c1c1;--doc-list-editor-focus-line-color:#b8b8b8;--doc-list-editor-header-input-bg-color:transparent;--doc-list-editor-header-input-focus-bg-color:#fff;--doc-list-editor-header-input-focus-color:#454545;--doc-list-editor-header-input-hover-bg-color:transparent;--doc-list-editor-header-input-hover-color:#fff;--doc-list-editor-title-color:#fff;--dop-color:#3e6cb6;--dropdown-active-bg-color:#3e6cb6;--dropdown-active-color:#fff;--dropdown-bg-color:#fff;--dropdown-font-color:#000;--dropdown-hover-bg-color:#7ea6f0;--dropdown-hover-color:#fff;--element-bg-color:#e3e2ff;--element-border-color:#c1c1c1;--element-disabled-bg-color:#ffffde;--element-disabled-opacity:1;--element-focus-bg-color:#e3e2ff;--element-focus-border-color:#2571cb;--element-font-color:#000;--element-hover-bg-color:#2571cb;--element-hover-font-color:#fff;--element-selected-bg-color:#817cff;--element-selected-font-color:#fff;--grid-active-column-bg-color:#154175;--grid-active-column-font-color:#fff;--grid-active-row-bg-color:#2165b6;--grid-active-row-font-color:#fff;--grid-cell-border-color:#eceeef;--grid-ctx-menu-bg-color:#e8e8e8;--grid-ctx-menu-border-color:#c1c1c1;--grid-ctx-menu-color:#595959;--grid-font-color:#000;--grid-group-active-row-bg-color:#6493cc;--grid-group-bg-color:#c0c0c0;--grid-group-summary-bg-color:#2165b6;--grid-header-cell-border-color:#dbdbdb;--grid-marked-bg-color:#7da5f0;--grid-row-bg-color:#fff;--grid-row-hover-bg-color:rgba(0,0,0,.075);--grid-summary-bg-color:#3e6cb6;--grid-summary-cell-bg-color:#c6daff;--grid-summary-color:#fff;--grid-summary-hover-bg-color:#4c79c2;--hint-button-font-color:#1b4572;--hint-icon-color:#7da5f0;--hint-main-color:#1b4572;--input-bottom-padding:1px;--input-top-padding:1px;--lang-toggle-bg-color:transparent;--lang-toggle-color:#fff;--main-header-bg-color:#7da5f0;--main-header-color:#fff;--main-header-height:44px;--main-header-logo-height:30px;--main-header-logo-width:87px;--message-basic-color:#22b14c;--message-error-color:#a52a2a;--message-font-color:#ffffff;--message-warning-color:#d79e36;--scroll-color:#f2f2f2;--scroll-slider-color:#666;--scroll-thin:14px;--shell-menu-data-bg-color:#fff;--shell-menu-group-color:#3e6cb6;--shell-menu-item-active-bg-color:#4f85eb;--shell-menu-item-bg-color:#efefef;--shell-menu-item-color:#545556;--shell-menu-item-hover-bg-color:#4f85eb;--shell-menu-item-hover-color:#fff;--spinner-color:#5e6672;--tabs-border-color:#c1c1c1;--tree-row-bg-color:#fff;--tree-row-color:#333;--tree-row-focus-bg-color:rgba(0,0,0,0.075);--tree-row-hover-bg-color:rgba(0,0,0,0.075);--xm-container-label-bg-color:#fff;}
+    .dropdown {
+  position: relative;
+  display: inline-block;
+}
+        .dropdown:hover .dropdown-content {
+  display: block;
+}
+        .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  margin-left: -90px;
+            margin-top: 5px;
+            color: black;
+            font-size: 12px;
+            border-radius: 5px;
+}
+
+.dropdown-content p:hover {
+  background-color: #7DA5F0; /* Изменение фона на синий при наведении */
+  color: white; /* Для лучшей видимости текста */
+    padding: 20px 20px 20px 20px;
+}
+a.text:active, /* активная/посещенная ссылка */
+a.text:hover,  /* при наведении */
+a.text {
+  text-decoration: none;
+    color: black;
+} 
+    </style></head>
+<body>
+<div id="myModal" style="display: none;">
+    
+    </div>
+<div class="ui-grid-ctx-menu-container"></div><div class="ui-grid-ctx-menu-container"></div><div class="hint-editor-container"></div><div class="hints-container"></div><div class="doc-warnings-container"></div><div class="gantt-chart-overlay" style="display: none;"></div><!-- Верх -->
+<div  id="hapka" class="shell-top">
+    <!-- Кнопка скрытия режимов -->
+    <a class="shell-top__menu-button js-hide-menu-button" href="menu.html">
+        <svg class="icon" version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 11" enable-background="new 0 0 14 11" xml:space="preserve">
+            <g>
+                <g>
+                    <rect x="0" y="0" width="4" height="3"></rect>
+                    <rect x="5" y="0" width="4" height="3"></rect>
+                    <rect x="10" y="0" width="4" height="3"></rect>
+                    <rect x="0" y="4" width="4" height="3"></rect>
+                    <rect x="5" y="4" width="4" height="3"></rect>
+                    <rect x="10" y="4" width="4" height="3"></rect>
+                    <rect x="0" y="8" width="4" height="3"></rect>
+                    <rect x="5" y="8" width="4" height="3"></rect>
+                    <rect x="10" y="8" width="4" height="3"></rect>
+                </g>
+            </g>
+        </svg>
+    </a>
+
+    <!-- Лого -->
+    <img class="shell-top__logo js-shell-top-logo" alt="" src="./files/syspanellogo_2.png">
+
+    <!-- Название системы/режима -->
+    <div class="shell-title-block js-shell-title-block">
+        <div class="shell-title shell-title-name js-shell-name" title="Тренажер ЭТРАН">Тренажер ЭТРАН</div>
+        <span class="shell-title shell-title--arrow js-shell-title" title="Ведомости подачи и уборки">Ведомости подачи и уборки</span>
+        <span class="shell-title js-shell-subtitle" title=""></span>
+    </div>
+
+    <!-- Messenger -->
+    <!-- <div style="width: 20px; height: 20px; margin-right: 10px; cursor: pointer; background: cyan" title="XM Messenger Prototype" class="js-chat-button"></div> -->
+
+    <!-- Язык интерфейса -->
+    <div class="shell-top__lang js-shell-language"></div>
+
+    <!-- Имя пользователя -->
+    <div class="shell-top__user-block js-user-block" aria-expanded="false">
+        <div class="user-block__name js-user-name">
+            <div class="shell-user-name__title">Обучающийся</div>
+              <div class="dropdown"><span>ИрГУПС</span>
+                <div class="dropdown-content">
+                <p style="padding: 4px 20px 4px 4px;"><a style="text-decoration: none;">О системе</a></p>
+                <p style="padding: 4px 20px 4px 4px;"><a href="index.html">Выйти</a></p>
+                    </div>
+           </div>
+        </div>
+        <div class="user-block__icon"><svg class="icon icon--18">
+                    <use xlink:href="./files/sprite.svg?no_cache=1712812419279#user"></use>
+                </svg></div>
+    </div>
+</div>
+
+<!-- Центральная область -->
+<div class="shell-data-area"><div class="shell-module-window" appid="2" loaded="false"><div class="docs-list-module">
+    <!-- Список фильтров -->
+    <div class="docs-list-main docs-list-main_wide js-list"><!-- Кнопки поиска и создания документов -->
+<div class="docs-list docs-list_wide">
+            <button onclick="window.location.href='vpu.html'" class="docs-list-button docs-list-button_wide button button--secondary js-button-create-document">Создать документ</button>
+    <button  onclick="myModalSearch()" class="docs-list-button docs-list-button_wide button button--secondary js-button-find-document"
+		>Найти документ</button>
+</div>
+</div>
+    
+</div></div></div>
+
+<!-- контейнер нового меню -->
+<div class="shell-overlay-container js-overlay-container"></div><section id="pods" style="flex-direction: row; display: none;" class="hint-player-menu ui-draggable ui-draggable-handle">
+    <section class="hint-player-button-section">
+        <button title="Включение\выключение подсказок" class="hint-player-button hint-player-toggle-hints js-toggle-hints"></button>
+        <button title="Выбор обучающего сценария" class="hint-player-button hint-player-show-scenarios-list js-show-scenarios-list"></button>
+    </section>
+</section>
+    <div id="modalSearch" style="display: none;"><div class="dialog dialog--search js-dialog dialog-active">
+    <!-- Диалог -->
+    <div class="dialog-main-area js-dialog-window" style="max-width: 50%">
+
+        <div class="dialog-top js-dialog-header">
+            <!-- Заголовок диалога -->
+            <div class="dialog-title-block js-dialog-title-block">
+                <div class="dialog-title js-dialog-title" title="Поиск документа">Поиск документа</div>
+                <div class="dialog-subtitle"><span class="dialog-subtitle__text js-dialog-subtitle" aria-expanded="false"></span></div>
+            </div>
+            <!-- Кнопка закрытия -->
+            <div  onclick="closeModalSearch()" class="dialog-close js-dialog-close"></div>
+        </div>
+
+        <div class="dialog__body js-dialog-body">
+            <!-- Данные диалога -->
+            <div class="dialog-data js-dialog-data"><div class="doc-search-dialog__container">
+    <!-- Выбор поля и ввод значения для поиска -->
+    <div class="doc-search-dialog__controls search-by-id">
+            <div class="doc-search-dialog__radios js-fields-radios" style="min-width: 185.469px;">
+                    <label title="Поиск по совпадению" class="doc-search-dialog__radio-label">
+                        <input type="radio" name="doc-search-field" class="doc-search-dialog__radio-input" value="0">
+                        <span class="doc-search-dialog__radio-caption js-field-radio-caption">Идентификатор накладной</span>
+                    </label>
+                    <label title="Поиск по вхождению" class="doc-search-dialog__radio-label">
+                        <input type="radio" name="doc-search-field" class="doc-search-dialog__radio-input" value="1">
+                        <span class="doc-search-dialog__radio-caption js-field-radio-caption">№ накладной</span>
+                    </label>
+                    <label title="Поиск по совпадению" class="doc-search-dialog__radio-label">
+                        <input type="radio" name="doc-search-field" class="doc-search-dialog__radio-input" value="2">
+                        <span class="doc-search-dialog__radio-caption js-field-radio-caption">№ визы</span>
+                    </label>
+                    <label title="Поиск по вхождению" class="doc-search-dialog__radio-label">
+                        <input type="radio" name="doc-search-field" class="doc-search-dialog__radio-input" value="3">
+                        <span class="doc-search-dialog__radio-caption js-field-radio-caption">№ вагона</span>
+                    </label>
+                    <label title="Поиск по вхождению" class="doc-search-dialog__radio-label">
+                        <input type="radio" name="doc-search-field" class="doc-search-dialog__radio-input" value="4">
+                        <span class="doc-search-dialog__radio-caption js-field-radio-caption">Номер контейнера</span>
+                    </label>
+            </div>
+        <div class="doc-search-dialog__input-container" style="min-width: 185.469px;">
+            <input type="text" class="form-control doc-search-dialog__input js-search-input" data-fnm-ignore="" maxlength="255" style="transform: translateY(64px);">
+        <div class="c-group input-group date doc-search-dialog__input" data-c-visible="false" data-c-invalid="false" data-c-enabled="true" style="transform: translateY(64px); width: 100%;">
+    <input type="text" class="c-input form-control " placeholder="">
+    <span class="c-button input-group-addon js-btn">
+        <span class="glyphicon glyphicon-calendar"></span>
+    </span>
+</div></div>
+    </div>
+    <!-- Кнопки -->
+        <div class="doc-search-dialog__buttons js-buttons-container">
+                <button class="button dialog-button js-dialog-button button--primary" data-button-id="1">Найти</button>
+                <button onclick="closeModalSearch()" class="button dialog-button js-dialog-button button--secondary" data-button-id="0">Отмена</button>
+        </div>
+    <!-- Место для результирующего грида -->
+    <div class="doc-search-dialog__results js-grid-container doc-search-dialog__results--visible" style="min-width: 500px; width: 1239.2px; max-width: 100%; min-height: 200px; height: 275.6px; max-height: 100%;"><div class="ui-grid ui-grid-ctx-menu-available ui-grid-bestfitted" can-sort="true" can-filter="true" can-move="true" can-hide="true" tabindex="0">
+        <div class="ui-grid-ctx-btn js-ctx-btn"></div>
+        <div class="ui-grid-header__reset-all-filters-btn js-reset-all-filters-btn block-removed" title="Отменить все фильтры"></div>
+        <div class="ui-grid-ctx-menu-background js-ctx-menu-bg block-removed"></div>
+        <div class="ui-grid-ctx-menu js-filter-menu" tabindex="-1">
+            
+            <div class="filter-list"></div>
+            <div class="ui-grid-ctx-menu-buttons">
+                <div class="btn-group">
+                    <button tabindex="-1" type="button" class="btn btn-secondary" data-action="apply" title="Применить">Применить</button>
+                    <button tabindex="-1" type="button" class="btn btn-secondary" data-action="cancel" title="Отмена">Отмена</button>
+                </div>
+            </div>
+        <div class="ui-grid-filter-header">
+                <div class="ui-grid-filter-select-checkbox__container">
+                    <span class="js-select-item ui-grid-filter-select-checkbox__item" data-select-all="true">Выбрать всё</span>&nbsp;&nbsp;&nbsp;<span class="js-select-item ui-grid-filter-select-checkbox__item" data-select-all="false">Очистить</span>
+                </div>
+                <div class="ui-grid-filter-search-container">
+                    <input type="text" class="ui-grid-filter-search js-search" placeholder="Поиск" tabindex="-1">
+                    <div title="Отменить фильтры на эту колонку" class="ui-grid-filter-cancel-button js-cancel"></div>
+                </div>
+                <div class="ui-grid-filter-search-not-found-message js-not-found">Не найдено</div>
+            </div></div>
+        
+        <div class="ui-grid-ctx-menu ui-grid-ctx-options-menu js-column-sort-menu ui-grid-ctx-menu-available" tabindex="-1"><div>
+        <div class="ui-grid-ctx-menu-group-header">Операции</div>
+        <ul class="ui-grid-ctx-menu-buttons ui-grid-ctx-menu-buttons--visible">
+            <li class="ui-grid-ctx-menu-button" data-action-id="10">
+                Копировать ячейку
+            </li>
+            <li class="ui-grid-ctx-menu-button" data-action-id="9">
+                Копировать строку(и)
+            </li>
+            <li class="ui-grid-ctx-menu-button" data-action-id="5">
+                Выделить всё
+            </li>
+            <li class="ui-grid-ctx-menu-button" data-action-id="6">
+                Экспортировать всё
+            </li>
+            <li class="ui-grid-ctx-menu-button" data-action-id="7">
+                Экспортировать выделенное
+            </li>
+        </ul>
+    </div><ul class="ui-grid-ctx-menu-elements js-grid-ctx-menu-elements level-0" data-level="0"><li title="ID накладной" class=" ui-grid-ctx-menu-element js-grid-ctx-menu-element level-0" data-uniq-name="2-ID НАКЛАДНОЙ" data-col-name="ID НАКЛАДНОЙ" data-level="0">
+                <input tabindex="-1" type="checkbox" checked="" class="ui-grid-data-check ui-grid-ctx-menu-element-toggler js-hide-toggler">
+                
+                ID накладной
+                
+        </li><li title="№ накладной" class=" ui-grid-ctx-menu-element js-grid-ctx-menu-element level-0" data-uniq-name="3-№ НАКЛАДНОЙ" data-col-name="№ НАКЛАДНОЙ" data-level="0">
+                <input tabindex="-1" type="checkbox" checked="" class="ui-grid-data-check ui-grid-ctx-menu-element-toggler js-hide-toggler">
+                
+                № накладной
+                
+        </li><li title="Состояние накладной" class=" ui-grid-ctx-menu-element js-grid-ctx-menu-element level-0" data-uniq-name="4-СОСТОЯНИЕ НАКЛАДНОЙ" data-col-name="СОСТОЯНИЕ НАКЛАДНОЙ" data-level="0">
+                <input tabindex="-1" type="checkbox" checked="" class="ui-grid-data-check ui-grid-ctx-menu-element-toggler js-hide-toggler">
+                
+                Состояние накладной
+                
+        </li><li title="Дата создания документа" class=" ui-grid-ctx-menu-element js-grid-ctx-menu-element level-0" data-uniq-name="5-ДАТА СОЗДАНИЯ ДОКУМЕНТА" data-col-name="ДАТА СОЗДАНИЯ ДОКУМЕНТА" data-level="0">
+                <input tabindex="-1" type="checkbox" checked="" class="ui-grid-data-check ui-grid-ctx-menu-element-toggler js-hide-toggler">
+                
+                Дата создания документа
+                
+        </li><li title="Дата приемосдатчика(дейст.док)" class=" ui-grid-ctx-menu-element js-grid-ctx-menu-element level-0" data-uniq-name="6-ДАТА ПРИЕМОСДАТЧИКА(ДЕЙСТ.ДОК)" data-col-name="ДАТА ПРИЕМОСДАТЧИКА(ДЕЙСТ.ДОК)" data-level="0">
+                <input tabindex="-1" type="checkbox" checked="" class="ui-grid-data-check ui-grid-ctx-menu-element-toggler js-hide-toggler">
+                
+                Дата приемосдатчика(дейст.док)
+                
+        </li><li title="Наим. станции отправления" class=" ui-grid-ctx-menu-element js-grid-ctx-menu-element level-0" data-uniq-name="7-НАИМ. СТАНЦИИ ОТПРАВЛЕНИЯ" data-col-name="НАИМ. СТАНЦИИ ОТПРАВЛЕНИЯ" data-level="0">
+                <input tabindex="-1" type="checkbox" checked="" class="ui-grid-data-check ui-grid-ctx-menu-element-toggler js-hide-toggler">
+                
+                Наим. станции отправления
+                
+        </li><li title="Наим. станции назначения" class=" ui-grid-ctx-menu-element js-grid-ctx-menu-element level-0" data-uniq-name="8-НАИМ. СТАНЦИИ НАЗНАЧЕНИЯ" data-col-name="НАИМ. СТАНЦИИ НАЗНАЧЕНИЯ" data-level="0">
+                <input tabindex="-1" type="checkbox" checked="" class="ui-grid-data-check ui-grid-ctx-menu-element-toggler js-hide-toggler">
+                
+                Наим. станции назначения
+                
+        </li><li title="№ вагона" class=" ui-grid-ctx-menu-element js-grid-ctx-menu-element level-0" data-uniq-name="9-№ ВАГОНА" data-col-name="№ ВАГОНА" data-level="0">
+                <input tabindex="-1" type="checkbox" checked="" class="ui-grid-data-check ui-grid-ctx-menu-element-toggler js-hide-toggler">
+                
+                № вагона
+                
+        </li><li title="Плательщик" class=" ui-grid-ctx-menu-element js-grid-ctx-menu-element level-0" data-uniq-name="10-ПЛАТЕЛЬЩИК" data-col-name="ПЛАТЕЛЬЩИК" data-level="0">
+                <input tabindex="-1" type="checkbox" checked="" class="ui-grid-data-check ui-grid-ctx-menu-element-toggler js-hide-toggler">
+                
+                Плательщик
+                
+        </li></ul><div class="ui-grid-ctx-menu-buttons ui-grid-ctx-menu-buttons_closed">
+       <button tabindex="-1" type="button" class="btn btn-secondary js-close-button" data-action="close" title="Отмена">Закрыть</button>
+    </div></div>
+        
+        <div class="ui-grid-content">
+            <div class="ui-grid-row-height js-grid-row-height"></div>
+            <div class="ui-grid-header js-grid-header-scroll js-grid-header">
+        <table class="ui-grid-header-table table table-condensed">
+            <colgroup>
+                <col class="js-grid-column">
+<col class="js-grid-column" style="width: 98px;">
+<col class="js-grid-column" style="width: 98px;">
+<col class="js-grid-column" style="width: 192px;">
+<col class="js-grid-column" style="width: 168px;">
+<col class="js-grid-column" style="width: 210px;">
+<col class="js-grid-column" style="width: 193px;">
+<col class="js-grid-column" style="width: 246px;">
+<col class="js-grid-column" style="width: 76px;">
+<col class="js-grid-column" style="width: 296px;">
+                <col class="ui-grid-header__extra-space-for-buttons">
+            </colgroup>
+            <thead>
+                <tr class="ui-grid-header-row">
+                <th draggable="undefined" col-name="DOC_ID" uniq-name="1-DOC_ID" data-displaytype="2" sorting="true" colspan="1" rowspan="1" data-columnid="1" class="ui-grid-header-cell ui-grid-column-bottom js-grid-column-bottom ">
+                <span class="ui-grid-header-text js-grid-header-text " title="DOC_ID">DOC_ID</span>
+                
+                
+                
+                <div class="ui-grid-header-filter-btn js-grid-filter-btn" data-uniq-name="1-DOC_ID" data-col-name="DOC_ID"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="971.986px" height="971.986px" viewBox="0 0 971.986 971.986" style="enable-background:new 0 0 971.986 971.986;" xml:space="preserve">
+<g>
+<path d="M370.216,459.3c10.2,11.1,15.8,25.6,15.8,40.6v442c0,26.601,32.1,40.101,51.1,21.4l123.3-141.3
+   c16.5-19.8,25.6-29.601,25.6-49.2V500c0-15,5.7-29.5,15.8-40.601L955.615,75.5c26.5-28.8,6.101-75.5-33.1-75.5h-873
+   c-39.2,0-59.7,46.6-33.1,75.5L370.216,459.3z"></path>
+</g>
+</svg></div>
+                <div class="ui-grid-column-resizer js-grid-column-resizer ui-draggable ui-draggable-handle" data-resizer-idx="0" data-uniq-name="1-DOC_ID" data-col-name="DOC_ID"></div>
+            </th>
+<th draggable="undefined" col-name="ID НАКЛАДНОЙ" uniq-name="2-ID НАКЛАДНОЙ" data-displaytype="2" sorting="true" colspan="1" rowspan="1" data-columnid="2" class="ui-grid-header-cell ui-grid-column-bottom js-grid-column-bottom ">
+                <span class="ui-grid-header-text js-grid-header-text " title="ID накладной">ID накладной</span>
+                
+                
+                
+                <div class="ui-grid-header-filter-btn js-grid-filter-btn" data-uniq-name="2-ID НАКЛАДНОЙ" data-col-name="ID НАКЛАДНОЙ"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="971.986px" height="971.986px" viewBox="0 0 971.986 971.986" style="enable-background:new 0 0 971.986 971.986;" xml:space="preserve">
+<g>
+<path d="M370.216,459.3c10.2,11.1,15.8,25.6,15.8,40.6v442c0,26.601,32.1,40.101,51.1,21.4l123.3-141.3
+   c16.5-19.8,25.6-29.601,25.6-49.2V500c0-15,5.7-29.5,15.8-40.601L955.615,75.5c26.5-28.8,6.101-75.5-33.1-75.5h-873
+   c-39.2,0-59.7,46.6-33.1,75.5L370.216,459.3z"></path>
+</g>
+</svg></div>
+                <div class="ui-grid-column-resizer js-grid-column-resizer ui-draggable ui-draggable-handle" data-resizer-idx="1" data-uniq-name="2-ID НАКЛАДНОЙ" data-col-name="ID НАКЛАДНОЙ"></div>
+            </th>
+<th draggable="undefined" col-name="№ НАКЛАДНОЙ" uniq-name="3-№ НАКЛАДНОЙ" data-displaytype="1" sorting="true" colspan="1" rowspan="1" data-columnid="3" class="ui-grid-header-cell ui-grid-column-bottom js-grid-column-bottom ">
+                <span class="ui-grid-header-text js-grid-header-text " title="№ накладной">№ накладной</span>
+                
+                
+                
+                <div class="ui-grid-header-filter-btn js-grid-filter-btn" data-uniq-name="3-№ НАКЛАДНОЙ" data-col-name="№ НАКЛАДНОЙ"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="971.986px" height="971.986px" viewBox="0 0 971.986 971.986" style="enable-background:new 0 0 971.986 971.986;" xml:space="preserve">
+<g>
+<path d="M370.216,459.3c10.2,11.1,15.8,25.6,15.8,40.6v442c0,26.601,32.1,40.101,51.1,21.4l123.3-141.3
+   c16.5-19.8,25.6-29.601,25.6-49.2V500c0-15,5.7-29.5,15.8-40.601L955.615,75.5c26.5-28.8,6.101-75.5-33.1-75.5h-873
+   c-39.2,0-59.7,46.6-33.1,75.5L370.216,459.3z"></path>
+</g>
+</svg></div>
+                <div class="ui-grid-column-resizer js-grid-column-resizer ui-draggable ui-draggable-handle" data-resizer-idx="2" data-uniq-name="3-№ НАКЛАДНОЙ" data-col-name="№ НАКЛАДНОЙ"></div>
+            </th>
+<th draggable="undefined" col-name="СОСТОЯНИЕ НАКЛАДНОЙ" uniq-name="4-СОСТОЯНИЕ НАКЛАДНОЙ" data-displaytype="1" sorting="true" colspan="1" rowspan="1" data-columnid="4" class="ui-grid-header-cell ui-grid-column-bottom js-grid-column-bottom ">
+                <span class="ui-grid-header-text js-grid-header-text " title="Состояние накладной">Состояние накладной</span>
+                
+                
+                
+                <div class="ui-grid-header-filter-btn js-grid-filter-btn" data-uniq-name="4-СОСТОЯНИЕ НАКЛАДНОЙ" data-col-name="СОСТОЯНИЕ НАКЛАДНОЙ"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="971.986px" height="971.986px" viewBox="0 0 971.986 971.986" style="enable-background:new 0 0 971.986 971.986;" xml:space="preserve">
+<g>
+<path d="M370.216,459.3c10.2,11.1,15.8,25.6,15.8,40.6v442c0,26.601,32.1,40.101,51.1,21.4l123.3-141.3
+   c16.5-19.8,25.6-29.601,25.6-49.2V500c0-15,5.7-29.5,15.8-40.601L955.615,75.5c26.5-28.8,6.101-75.5-33.1-75.5h-873
+   c-39.2,0-59.7,46.6-33.1,75.5L370.216,459.3z"></path>
+</g>
+</svg></div>
+                <div class="ui-grid-column-resizer js-grid-column-resizer ui-draggable ui-draggable-handle" data-resizer-idx="3" data-uniq-name="4-СОСТОЯНИЕ НАКЛАДНОЙ" data-col-name="СОСТОЯНИЕ НАКЛАДНОЙ"></div>
+            </th>
+<th draggable="undefined" col-name="ДАТА СОЗДАНИЯ ДОКУМЕНТА" uniq-name="5-ДАТА СОЗДАНИЯ ДОКУМЕНТА" data-displaytype="5" sorting="true" colspan="1" rowspan="1" data-columnid="5" class="ui-grid-header-cell ui-grid-column-bottom js-grid-column-bottom ">
+                <span class="ui-grid-header-text js-grid-header-text " title="Дата создания документа">Дата создания документа</span>
+                
+                
+                
+                <div class="ui-grid-header-filter-btn js-grid-filter-btn" data-uniq-name="5-ДАТА СОЗДАНИЯ ДОКУМЕНТА" data-col-name="ДАТА СОЗДАНИЯ ДОКУМЕНТА"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="971.986px" height="971.986px" viewBox="0 0 971.986 971.986" style="enable-background:new 0 0 971.986 971.986;" xml:space="preserve">
+<g>
+<path d="M370.216,459.3c10.2,11.1,15.8,25.6,15.8,40.6v442c0,26.601,32.1,40.101,51.1,21.4l123.3-141.3
+   c16.5-19.8,25.6-29.601,25.6-49.2V500c0-15,5.7-29.5,15.8-40.601L955.615,75.5c26.5-28.8,6.101-75.5-33.1-75.5h-873
+   c-39.2,0-59.7,46.6-33.1,75.5L370.216,459.3z"></path>
+</g>
+</svg></div>
+                <div class="ui-grid-column-resizer js-grid-column-resizer ui-draggable ui-draggable-handle" data-resizer-idx="4" data-uniq-name="5-ДАТА СОЗДАНИЯ ДОКУМЕНТА" data-col-name="ДАТА СОЗДАНИЯ ДОКУМЕНТА"></div>
+            </th>
+<th draggable="undefined" col-name="ДАТА ПРИЕМОСДАТЧИКА(ДЕЙСТ.ДОК)" uniq-name="6-ДАТА ПРИЕМОСДАТЧИКА(ДЕЙСТ.ДОК)" data-displaytype="5" sorting="true" colspan="1" rowspan="1" data-columnid="6" class="ui-grid-header-cell ui-grid-column-bottom js-grid-column-bottom ">
+                <span class="ui-grid-header-text js-grid-header-text " title="Дата приемосдатчика(дейст.док)">Дата приемосдатчика(дейст.док)</span>
+                
+                
+                
+                <div class="ui-grid-header-filter-btn js-grid-filter-btn" data-uniq-name="6-ДАТА ПРИЕМОСДАТЧИКА(ДЕЙСТ.ДОК)" data-col-name="ДАТА ПРИЕМОСДАТЧИКА(ДЕЙСТ.ДОК)"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="971.986px" height="971.986px" viewBox="0 0 971.986 971.986" style="enable-background:new 0 0 971.986 971.986;" xml:space="preserve">
+<g>
+<path d="M370.216,459.3c10.2,11.1,15.8,25.6,15.8,40.6v442c0,26.601,32.1,40.101,51.1,21.4l123.3-141.3
+   c16.5-19.8,25.6-29.601,25.6-49.2V500c0-15,5.7-29.5,15.8-40.601L955.615,75.5c26.5-28.8,6.101-75.5-33.1-75.5h-873
+   c-39.2,0-59.7,46.6-33.1,75.5L370.216,459.3z"></path>
+</g>
+</svg></div>
+                <div class="ui-grid-column-resizer js-grid-column-resizer ui-draggable ui-draggable-handle" data-resizer-idx="5" data-uniq-name="6-ДАТА ПРИЕМОСДАТЧИКА(ДЕЙСТ.ДОК)" data-col-name="ДАТА ПРИЕМОСДАТЧИКА(ДЕЙСТ.ДОК)"></div>
+            </th>
+<th draggable="undefined" col-name="НАИМ. СТАНЦИИ ОТПРАВЛЕНИЯ" uniq-name="7-НАИМ. СТАНЦИИ ОТПРАВЛЕНИЯ" data-displaytype="1" sorting="true" colspan="1" rowspan="1" data-columnid="7" class="ui-grid-header-cell ui-grid-column-bottom js-grid-column-bottom ">
+                <span class="ui-grid-header-text js-grid-header-text " title="Наим. станции отправления">Наим. станции отправления</span>
+                
+                
+                
+                <div class="ui-grid-header-filter-btn js-grid-filter-btn" data-uniq-name="7-НАИМ. СТАНЦИИ ОТПРАВЛЕНИЯ" data-col-name="НАИМ. СТАНЦИИ ОТПРАВЛЕНИЯ"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="971.986px" height="971.986px" viewBox="0 0 971.986 971.986" style="enable-background:new 0 0 971.986 971.986;" xml:space="preserve">
+<g>
+<path d="M370.216,459.3c10.2,11.1,15.8,25.6,15.8,40.6v442c0,26.601,32.1,40.101,51.1,21.4l123.3-141.3
+   c16.5-19.8,25.6-29.601,25.6-49.2V500c0-15,5.7-29.5,15.8-40.601L955.615,75.5c26.5-28.8,6.101-75.5-33.1-75.5h-873
+   c-39.2,0-59.7,46.6-33.1,75.5L370.216,459.3z"></path>
+</g>
+</svg></div>
+                <div class="ui-grid-column-resizer js-grid-column-resizer ui-draggable ui-draggable-handle" data-resizer-idx="6" data-uniq-name="7-НАИМ. СТАНЦИИ ОТПРАВЛЕНИЯ" data-col-name="НАИМ. СТАНЦИИ ОТПРАВЛЕНИЯ"></div>
+            </th>
+<th draggable="undefined" col-name="НАИМ. СТАНЦИИ НАЗНАЧЕНИЯ" uniq-name="8-НАИМ. СТАНЦИИ НАЗНАЧЕНИЯ" data-displaytype="1" sorting="true" colspan="1" rowspan="1" data-columnid="8" class="ui-grid-header-cell ui-grid-column-bottom js-grid-column-bottom ">
+                <span class="ui-grid-header-text js-grid-header-text " title="Наим. станции назначения">Наим. станции назначения</span>
+                
+                
+                
+                <div class="ui-grid-header-filter-btn js-grid-filter-btn" data-uniq-name="8-НАИМ. СТАНЦИИ НАЗНАЧЕНИЯ" data-col-name="НАИМ. СТАНЦИИ НАЗНАЧЕНИЯ"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="971.986px" height="971.986px" viewBox="0 0 971.986 971.986" style="enable-background:new 0 0 971.986 971.986;" xml:space="preserve">
+<g>
+<path d="M370.216,459.3c10.2,11.1,15.8,25.6,15.8,40.6v442c0,26.601,32.1,40.101,51.1,21.4l123.3-141.3
+   c16.5-19.8,25.6-29.601,25.6-49.2V500c0-15,5.7-29.5,15.8-40.601L955.615,75.5c26.5-28.8,6.101-75.5-33.1-75.5h-873
+   c-39.2,0-59.7,46.6-33.1,75.5L370.216,459.3z"></path>
+</g>
+</svg></div>
+                <div class="ui-grid-column-resizer js-grid-column-resizer ui-draggable ui-draggable-handle" data-resizer-idx="7" data-uniq-name="8-НАИМ. СТАНЦИИ НАЗНАЧЕНИЯ" data-col-name="НАИМ. СТАНЦИИ НАЗНАЧЕНИЯ"></div>
+            </th>
+<th draggable="undefined" col-name="№ ВАГОНА" uniq-name="9-№ ВАГОНА" data-displaytype="1" sorting="true" colspan="1" rowspan="1" data-columnid="9" class="ui-grid-header-cell ui-grid-column-bottom js-grid-column-bottom ">
+                <span class="ui-grid-header-text js-grid-header-text " title="№ вагона">№ вагона</span>
+                
+                
+                
+                <div class="ui-grid-header-filter-btn js-grid-filter-btn" data-uniq-name="9-№ ВАГОНА" data-col-name="№ ВАГОНА"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="971.986px" height="971.986px" viewBox="0 0 971.986 971.986" style="enable-background:new 0 0 971.986 971.986;" xml:space="preserve">
+<g>
+<path d="M370.216,459.3c10.2,11.1,15.8,25.6,15.8,40.6v442c0,26.601,32.1,40.101,51.1,21.4l123.3-141.3
+   c16.5-19.8,25.6-29.601,25.6-49.2V500c0-15,5.7-29.5,15.8-40.601L955.615,75.5c26.5-28.8,6.101-75.5-33.1-75.5h-873
+   c-39.2,0-59.7,46.6-33.1,75.5L370.216,459.3z"></path>
+</g>
+</svg></div>
+                <div class="ui-grid-column-resizer js-grid-column-resizer ui-draggable ui-draggable-handle" data-resizer-idx="8" data-uniq-name="9-№ ВАГОНА" data-col-name="№ ВАГОНА"></div>
+            </th>
+<th draggable="undefined" col-name="ПЛАТЕЛЬЩИК" uniq-name="10-ПЛАТЕЛЬЩИК" data-displaytype="1" sorting="true" colspan="1" rowspan="1" data-columnid="10" class="ui-grid-header-cell ui-grid-column-bottom js-grid-column-bottom ">
+                <span class="ui-grid-header-text js-grid-header-text " title="Плательщик">Плательщик</span>
+                
+                
+                
+                <div class="ui-grid-header-filter-btn js-grid-filter-btn" data-uniq-name="10-ПЛАТЕЛЬЩИК" data-col-name="ПЛАТЕЛЬЩИК"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="971.986px" height="971.986px" viewBox="0 0 971.986 971.986" style="enable-background:new 0 0 971.986 971.986;" xml:space="preserve">
+<g>
+<path d="M370.216,459.3c10.2,11.1,15.8,25.6,15.8,40.6v442c0,26.601,32.1,40.101,51.1,21.4l123.3-141.3
+   c16.5-19.8,25.6-29.601,25.6-49.2V500c0-15,5.7-29.5,15.8-40.601L955.615,75.5c26.5-28.8,6.101-75.5-33.1-75.5h-873
+   c-39.2,0-59.7,46.6-33.1,75.5L370.216,459.3z"></path>
+</g>
+</svg></div>
+                <div class="ui-grid-column-resizer js-grid-column-resizer ui-draggable ui-draggable-handle" data-resizer-idx="9" data-uniq-name="10-ПЛАТЕЛЬЩИК" data-col-name="ПЛАТЕЛЬЩИК"></div>
+            </th>
+            </tr>
+            </thead>
+        </table>
+    </div>
+            <div class="ui-grid-body">
+            <div class="ui-grid-body-scrollable js-grid-body" style="overflow-x: auto;">
+                <div class="ui-grid-vpage js-grid-vpage" style="min-width: 1593px; height: 1134px;"></div>
+            <table class="ui-grid-page table table-hover table-condensed ui-grid-summary-page" style="top: 20px;">
+        <colgroup>
+            <col class="js-grid-column">
+<col class="js-grid-column" style="width: 98px;">
+<col class="js-grid-column" style="width: 98px;">
+<col class="js-grid-column" style="width: 192px;">
+<col class="js-grid-column" style="width: 168px;">
+<col class="js-grid-column" style="width: 210px;">
+<col class="js-grid-column" style="width: 193px;">
+<col class="js-grid-column" style="width: 246px;">
+<col class="js-grid-column" style="width: 76px;">
+<col class="js-grid-column" style="width: 296px;">
+        </colgroup>
+        <tbody class="ui-grid-table-body js-grid-table-body"></tbody>
+    <tr class="ui-grid-row ui-grid-row-summary js-grid-row-summary js-has-bgcolor" data-key-value="undefined">
+        <td class="ui-grid-cell js-grid-cell ui-grid-column-type-number   " col-name="DOC_ID" uniq-name="1-DOC_ID" col-number-value=""><i class="ui-grid-cell-bg-element"></i><i class="ui-grid-cell-border-element"></i></td>
+<td class="ui-grid-cell js-grid-cell ui-grid-column-type-number first-cell" col-name="ID НАКЛАДНОЙ" uniq-name="2-ID НАКЛАДНОЙ" col-number-value="1">1<i class="ui-grid-cell-bg-element"></i><i class="ui-grid-cell-border-element"></i></td>
+<td class="ui-grid-cell js-grid-cell ui-grid-column-type-string   " col-name="№ НАКЛАДНОЙ" uniq-name="3-№ НАКЛАДНОЙ"><i class="ui-grid-cell-bg-element"></i><i class="ui-grid-cell-border-element"></i></td>
+<td class="ui-grid-cell js-grid-cell ui-grid-column-type-string   " col-name="СОСТОЯНИЕ НАКЛАДНОЙ" uniq-name="4-СОСТОЯНИЕ НАКЛАДНОЙ"><i class="ui-grid-cell-bg-element"></i><i class="ui-grid-cell-border-element"></i></td>
+<td class="ui-grid-cell js-grid-cell ui-grid-column-type-datetime   " col-name="ДАТА СОЗДАНИЯ ДОКУМЕНТА" uniq-name="5-ДАТА СОЗДАНИЯ ДОКУМЕНТА"><i class="ui-grid-cell-bg-element"></i><i class="ui-grid-cell-border-element"></i></td>
+<td class="ui-grid-cell js-grid-cell ui-grid-column-type-datetime   " col-name="ДАТА ПРИЕМОСДАТЧИКА(ДЕЙСТ.ДОК)" uniq-name="6-ДАТА ПРИЕМОСДАТЧИКА(ДЕЙСТ.ДОК)"><i class="ui-grid-cell-bg-element"></i><i class="ui-grid-cell-border-element"></i></td>
+<td class="ui-grid-cell js-grid-cell ui-grid-column-type-string   " col-name="НАИМ. СТАНЦИИ ОТПРАВЛЕНИЯ" uniq-name="7-НАИМ. СТАНЦИИ ОТПРАВЛЕНИЯ"><i class="ui-grid-cell-bg-element"></i><i class="ui-grid-cell-border-element"></i></td>
+<td class="ui-grid-cell js-grid-cell ui-grid-column-type-string   " col-name="НАИМ. СТАНЦИИ НАЗНАЧЕНИЯ" uniq-name="8-НАИМ. СТАНЦИИ НАЗНАЧЕНИЯ"><i class="ui-grid-cell-bg-element"></i><i class="ui-grid-cell-border-element"></i></td>
+<td class="ui-grid-cell js-grid-cell ui-grid-column-type-string   " col-name="№ ВАГОНА" uniq-name="9-№ ВАГОНА"><i class="ui-grid-cell-bg-element"></i><i class="ui-grid-cell-border-element"></i></td>
+<td class="ui-grid-cell js-grid-cell ui-grid-column-type-string last-cell" col-name="ПЛАТЕЛЬЩИК" uniq-name="10-ПЛАТЕЛЬЩИК"><i class="ui-grid-cell-bg-element"></i><i class="ui-grid-cell-border-element"></i></td>
+    </tr></table><table class="ui-grid-page table table-hover table-condensed" page-num="0" style="top: 0px;">
+        <colgroup>
+            <col class="js-grid-column">
+<col class="js-grid-column" style="width: 98px;">
+<col class="js-grid-column" style="width: 98px;">
+<col class="js-grid-column" style="width: 192px;">
+<col class="js-grid-column" style="width: 168px;">
+<col class="js-grid-column" style="width: 210px;">
+<col class="js-grid-column" style="width: 193px;">
+<col class="js-grid-column" style="width: 246px;">
+<col class="js-grid-column" style="width: 76px;">
+<col class="js-grid-column" style="width: 296px;">
+        </colgroup>
+        <tbody class="ui-grid-table-body js-grid-table-body"></tbody>
+    <tr class="ui-grid-row ui-grid-row-even ui-grid-row-marked" row-index="0" row-selected="true" data-key-value="66250286">
+        <td class="ui-grid-cell js-grid-cell ui-grid-column-type-number ui-grid-column-active" col-name="DOC_ID" uniq-name="1-DOC_ID" col-number-value="66250286">66250286<i class="ui-grid-cell-bg-element"></i><i class="ui-grid-cell-border-element"></i></td>
+<td class="ui-grid-cell js-grid-cell ui-grid-column-type-number first-cell" col-name="ID НАКЛАДНОЙ" uniq-name="2-ID НАКЛАДНОЙ" col-number-value="66250286">66250286<i class="ui-grid-cell-bg-element"></i><i class="ui-grid-cell-border-element"></i></td>
+<td class="ui-grid-cell js-grid-cell ui-grid-column-type-string   " col-name="№ НАКЛАДНОЙ" uniq-name="3-№ НАКЛАДНОЙ">20612164<i class="ui-grid-cell-bg-element"></i><i class="ui-grid-cell-border-element"></i></td>
+<td class="ui-grid-cell js-grid-cell ui-grid-column-type-string   " col-name="СОСТОЯНИЕ НАКЛАДНОЙ" uniq-name="4-СОСТОЯНИЕ НАКЛАДНОЙ">Заготовка импорта, транзита<i class="ui-grid-cell-bg-element"></i><i class="ui-grid-cell-border-element"></i></td>
+<td class="ui-grid-cell js-grid-cell ui-grid-column-type-datetime   " col-name="ДАТА СОЗДАНИЯ ДОКУМЕНТА" uniq-name="5-ДАТА СОЗДАНИЯ ДОКУМЕНТА">21.03.2024 12:21:26<i class="ui-grid-cell-bg-element"></i><i class="ui-grid-cell-border-element"></i></td>
+<td class="ui-grid-cell js-grid-cell ui-grid-column-type-datetime   " col-name="ДАТА ПРИЕМОСДАТЧИКА(ДЕЙСТ.ДОК)" uniq-name="6-ДАТА ПРИЕМОСДАТЧИКА(ДЕЙСТ.ДОК)"><i class="ui-grid-cell-bg-element"></i><i class="ui-grid-cell-border-element"></i></td>
+<td class="ui-grid-cell js-grid-cell ui-grid-column-type-string   " col-name="НАИМ. СТАНЦИИ ОТПРАВЛЕНИЯ" uniq-name="7-НАИМ. СТАНЦИИ ОТПРАВЛЕНИЯ">ЖАНААУЛ<i class="ui-grid-cell-bg-element"></i><i class="ui-grid-cell-border-element"></i></td>
+<td class="ui-grid-cell js-grid-cell ui-grid-column-type-string   " col-name="НАИМ. СТАНЦИИ НАЗНАЧЕНИЯ" uniq-name="8-НАИМ. СТАНЦИИ НАЗНАЧЕНИЯ">БЕЛЫЙ РАСТ<i class="ui-grid-cell-bg-element"></i><i class="ui-grid-cell-border-element"></i></td>
+<td class="ui-grid-cell js-grid-cell ui-grid-column-type-string   " col-name="№ ВАГОНА" uniq-name="9-№ ВАГОНА">54545454<i class="ui-grid-cell-bg-element"></i><i class="ui-grid-cell-border-element"></i></td>
+<td class="ui-grid-cell js-grid-cell ui-grid-column-type-string last-cell" col-name="ПЛАТЕЛЬЩИК" uniq-name="10-ПЛАТЕЛЬЩИК"><i class="ui-grid-cell-bg-element"></i><i class="ui-grid-cell-border-element"></i></td>
+    </tr></table></div>
+            <div class="ui-grid-body-empty">Нет данных</div>
+        </div>
+    
+            <div class="ui-grid-data-loading-message">Загрузка данных</div>
+        </div>
+    </div></div>
+</div></div>
+
+            <div class="dialog__footer js-dialog-footer">
+                <!-- Кнопки -->
+            </div>
+        </div>
+    </div>
+</div></div>
+    <script>
+// Получаем модальное окно
+var modal = document.getElementById('modalSearch');
+
+function myModalSearch() {
+  modal.style.display = 'block';
+}
+// Когда пользователь нажимает на <span> (x), закрываем модальное окно
+function closeModalSearch() {
+modal.style.display = 'none';
+}
+
+ window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+</script>
+</body></html>
