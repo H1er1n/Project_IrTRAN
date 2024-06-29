@@ -209,7 +209,7 @@ a.text {
         <div class="shell-menu__items js-menu-items"><div class="shell-menu__items-wrap">
     <div class="shell-menu__items-inner">
         <div class="shell-menu__item-wrap">
-            <a href="doc_menu_vpu.html" class="shell-menu__item js-menu-item" data-appid="19" title="Ведомости подачи и уборки">
+            <a onclick="showConfirmation()" class="shell-menu__item js-menu-item" data-appid="19" title="Ведомости подачи и уборки">
                 <img class="shell-menu__item-img " src="./files/IMAGES/AppID_19.png">
                 <svg class="shell-menu__favorite-icon shell-favorite-icon js-shell-menu__favorite-icon" viewBox="0 0 2000 2000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
                   
@@ -227,7 +227,7 @@ a.text {
             </a>
         </div>
         <div class="shell-menu__item-wrap">
-            <a href="doc_menu_invoice.html" class="shell-menu__item js-menu-item" data-appid="1" title="Накладная">
+            <a onclick="showConfirmation2()" class="shell-menu__item js-menu-item" data-appid="1" title="Накладная">
                 <img class="shell-menu__item-img " src="./files/IMAGES/AppID_1.png">
                 <svg class="shell-menu__favorite-icon shell-favorite-icon js-shell-menu__favorite-icon" viewBox="0 0 2000 2000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
                 
@@ -236,7 +236,7 @@ a.text {
             </a>
         </div>
         <div class="shell-menu__item-wrap">
-            <a href="doc_menu_nv.html" class="shell-menu__item js-menu-item" data-appid="11809" title="Накопительная ведомость">
+            <a onclick="showConfirmation3()" class="shell-menu__item js-menu-item" data-appid="11809" title="Накопительная ведомость">
                 <img class="shell-menu__item-img " src="./files/IMAGES/AppID_11809.png">
                 <svg class="shell-menu__favorite-icon shell-favorite-icon js-shell-menu__favorite-icon" viewBox="0 0 2000 2000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
                    
@@ -245,7 +245,7 @@ a.text {
             </a>
         </div>
         <div class="shell-menu__item-wrap">
-            <a href="/UserScript.html" class="shell-menu__item js-menu-item" data-appid="11809" title="Обучающий сценарий Новичок">
+            <a onclick="showConfirmation4()" class="shell-menu__item js-menu-item" data-appid="11809" title="Обучающий сценарий Новичок">
                 <img class="shell-menu__item-img " src="https://cdn-icons-png.freepik.com/512/2234/2234794.png">
                 <svg class="shell-menu__favorite-icon shell-favorite-icon js-shell-menu__favorite-icon" viewBox="0 0 2000 2000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
                    
@@ -254,7 +254,7 @@ a.text {
             </a>
         </div>
         <div class="shell-menu__item-wrap">
-            <a href="" class="shell-menu__item js-menu-item" data-appid="11809" title="Обучающий сценарий Продвинутый">
+            <a onclick="Practicka()" class="shell-menu__item js-menu-item" data-appid="11809" title="Обучающий сценарий Продвинутый">
                 <img class="shell-menu__item-img " src="https://static.tildacdn.com/tild3632-3336-4232-b165-386337626361/main.png">
                 <svg class="shell-menu__favorite-icon shell-favorite-icon js-shell-menu__favorite-icon" viewBox="0 0 2000 2000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
                    
@@ -263,7 +263,7 @@ a.text {
             </a>
         </div>
         <div class="shell-menu__item-wrap">
-            <a href="" class="shell-menu__item js-menu-item" data-appid="11809" title="Обучающий сценарий Эксперт">
+            <a onclick="Practicka()" class="shell-menu__item js-menu-item" data-appid="11809" title="Обучающий сценарий Эксперт">
                 <img class="shell-menu__item-img " src="https://sosh1nov.moy.su/2020/distant/Online-Education.png">
                 <svg class="shell-menu__favorite-icon shell-favorite-icon js-shell-menu__favorite-icon" viewBox="0 0 2000 2000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
                    
@@ -276,5 +276,35 @@ a.text {
 </div>
     </div>
 </div>
+<script>
+    function showConfirmation() {
+        if (confirm("Опция в разработке, не все функции выполнены в полном обЪеме. Вы уверены, что хотите продолжить?")) {
+            window.location = "doc_menu_vpu.html";
+        }
+    }
+    function showConfirmation1() {
+        if (confirm("Опция в разработке, не все функции выполнены в полном обЪеме. Вы уверены, что хотите продолжить?")) {
+            window.location = "doc_menu.html";
+        }
+    }
+    function showConfirmation2() {
+        if (confirm("Опция в разработке, не все функции выполнены в полном обЪеме. Вы уверены, что хотите продолжить?")) {
+            window.location = "doc_menu_invoice.html";
+        }
+    }
+    function showConfirmation3() {
+        if (confirm("Опция в разработке, не все функции выполнены в полном обЪеме. Вы уверены, что хотите продолжить?")) {
+            window.location = "doc_menu_nv.html";
+        }
+    }
+    function showConfirmation4() {
+        if (confirm("Опция в разработке, не все функции выполнены в полном обЪеме. Вы уверены, что хотите продолжить?")) {
+            window.location = "UserScript.html";
+        }
+    }
+    function Practicka(){
+        alert('Идет работа над опцией');
+    }
+</script>
 </body>
 </html>
