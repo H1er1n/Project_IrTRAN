@@ -11,7 +11,7 @@
 
     <meta charset="UTF-8">
     <!--<meta name="viewport" content="width=device-width">-->
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width,user-scalable=no">
 <link href="./files/preloader.05e9578ddfc67dd3594c.css" rel="stylesheet"><link href="./files/main.5995fb6faa064b522a0a.css" rel="stylesheet"><link rel="stylesheet" type="text/css" href="./files/vendors.b640cc19cb0bc4cee48d.css">
     <style>
         .picker_wrapper
@@ -124,6 +124,7 @@ a.text {
     padding: 10px; 
     margin: 10px;
   }
+
     </style>
     </head>
 <body>
@@ -152,7 +153,7 @@ a.text {
     <!-- Лого -->
    <div class="dropdown"> <img class="shell-top__logo js-shell-top-logo" alt="" src="./files/syspanellogo_2.png">
       <div class="dropdown-content" style="min-width: 200px;">
-                <p style="padding: 4px 20px 4px 4px;"><a>Сценарий работы "Клиент"</a></p>
+                <p style="padding: 4px 20px 4px 4px;"><a>Сценарий работы "Клиент"</a></p> 
                 <p style="padding: 4px 20px 4px 4px;"><a>Сценарий работы "Агент"</a></p>
                 <p style="padding: 4px 20px 4px 4px;"><a>Режим теста</a></p>
                 <p style="padding: 4px 20px 4px 4px;"><a>Режим проверки знаний</a></p>
@@ -160,8 +161,8 @@ a.text {
 
     <!-- Название системы/режима -->
     <div class="shell-title-block js-shell-title-block">
-        <div class="shell-title shell-title-name js-shell-name" title="ЭТРАН">Симулятор ЭТРАН</div>
-        <span class="shell-title shell-title--arrow js-shell-title" title="">Сценарий обучения "Новичок"</span>
+        <div class="shell-title shell-title-name js-shell-name" title="ЭТРАН">Тренажер ЭТРАН - Сценарий обучения "Новичок"</div>
+        <span class="shell-title shell-title--arrow js-shell-title" title=""></span>
         <span class="shell-title js-shell-subtitle" title=""></span>
     </div>
 
@@ -196,17 +197,17 @@ a.text {
  <div class="shell-menu shell-menu--visible">
     <div class="shell-menu-data">
         <div class="shell-menu-data__close dialog-close js-shell-menu-close invis"></div>
-        <div class="shell-menu__header" style="overflow-x: auto;">
-            <div class="js-header-container shell-menu__header-inner">
-                 <div style="text-align: justify; font-size: 15px; word-wrap: break-word;">
+        <div class="shell-menu__header" style="word-wrap: break-word;">
+            <div class="js-header-container shell-menu__header-inner" style="word-wrap: break-word; overflow: auto;">
+                <div style="text-align: justify; font-size: 15px; word-wrap: break-word;">
                     
-                       <p>    Обучающий режим «Новичок» предназначен для тех, кто только начинает работать с программой для заполнения документов. Он помогает освоить базовые навыки работы с интерфейсом программы и основными инструментами.</p>
+                       <p>Обучающий режим «Новичок» предназначен для тех, кто только начинает работать с программой для заполнения документов. Он помогает освоить базовые навыки работы с интерфейсом программы и основными инструментами.</p>
 
-                        <p>    В режиме «Новичок» пользователь получает доступ к упрощённому интерфейсу, где представлены только самые необходимые инструменты. Кроме того, программа предоставляет подсказки и советы по использованию каждого инструмента, без ограничения по времени.</p>
+                        <p>В режиме «Новичок» пользователь получает доступ к упрощённому интерфейсу, где представлены только самые необходимые инструменты. Кроме того, программа предоставляет подсказки и советы по использованию каждого инструмента, без ограничения по времени.</p>
                         
-                        <p>    В процессе обучения пользователь выполняет ряд простых задач, таких как создание нового документа, выбор шаблона, ввод текста и редактирование его форматирования. По мере выполнения задач сложность постепенно увеличивается.</p>
+                        <p>В процессе обучения пользователь выполняет ряд простых задач, таких как создание нового документа, выбор шаблона, ввод текста и редактирование его форматирования. По мере выполнения задач сложность постепенно увеличивается.</p>
                         
-                        <p>    После завершения обучения пользователь может перейти в обычный режим работы с программой, где ему будут доступны все возможности и инструменты или пройти другой обучающий сценарий.</p>
+                        <p>После завершения обучения пользователь может перейти в обычный режим работы с программой, где ему будут доступны все возможности и инструменты или пройти другой обучающий сценарий.</p>
                 </div>
             </div>
         </div>
@@ -238,10 +239,10 @@ a.text {
         
                 <div class="dialog__body js-dialog-body">
                     <!-- Данные диалога -->
-                    <div ><div>
+                    <div class="dialog-data js-dialog-data"><div class="doc-search-dialog__container">
                         
-                        <div style="display: flex; justify-content: space-around;">
-                        <div class="shell-menu__item-wrap" style="flex-grow: 1;">
+                        <div class="shell-menu__items-inner" style="margin-left: -47%;">
+                        <div class="shell-menu__item-wrap">
                             <a href="instructions.html" class="shell-menu__item js-menu-item" data-appid="11809" title="Скринкаст">
                                 <img class="shell-menu__item-img " src="https://resell-rights-weekly.com/SP/7_2018/ModernVideoMrktngVids_mrrg/images/video-upgrade.png">
                                 <svg class="shell-menu__favorite-icon shell-favorite-icon js-shell-menu__favorite-icon" viewBox="0 0 2000 2000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
@@ -249,7 +250,7 @@ a.text {
                                 <span class="shell-menu__item-text">Скринкаст</span>
                             </a>
                         </div>
-                        <div class="shell-menu__item-wrap" style="flex-grow: 1;">
+                        <div class="shell-menu__item-wrap">
                             <a onclick="Practicka()" class="shell-menu__item js-menu-item" data-appid="11809" title="Правила заполнения">
                                 <img class="shell-menu__item-img " src="https://sh-poperechenskaya-r81.gosweb.gosuslugi.ru/netcat_files/114/1883/ikonka_pravila_priema.png">
                                 <svg class="shell-menu__favorite-icon shell-favorite-icon js-shell-menu__favorite-icon" viewBox="0 0 2000 2000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">

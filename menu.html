@@ -11,7 +11,7 @@
 
     <meta charset="UTF-8">
     <!--<meta name="viewport" content="width=device-width">-->
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width,user-scalable=no">
 <link href="./files/preloader.05e9578ddfc67dd3594c.css" rel="stylesheet"><link href="./files/main.5995fb6faa064b522a0a.css" rel="stylesheet"><link rel="stylesheet" type="text/css" href="./files/vendors.b640cc19cb0bc4cee48d.css">
     <style>
         .picker_wrapper
@@ -109,12 +109,12 @@
 }
 
 .dropdown-content p:hover {
-  background-color: #7DA5F0; /* Изменение фона на синий при наведении */
-  color: white; /* Для лучшей видимости текста */
+  background-color: #7DA5F0; 
+  color: white; 
     padding: 20px 20px 20px 20px;
 }
-a.text:active, /* активная/посещенная ссылка */
-a.text:hover,  /* при наведении */
+a.text:active, 
+a.text:hover,  
 a.text {
   text-decoration: none;
     color: black;
@@ -145,12 +145,8 @@ a.text {
     </a>
 
     <!-- Лого -->
-   <div class="dropdown"> <img class="shell-top__logo js-shell-top-logo" alt="" src="./files/syspanellogo_2.png">
-      <div class="dropdown-content" style="min-width: 200px;">
-                <p style="padding: 4px 20px 4px 4px;"><a>Сценарий работы "Клиент"</a></p>
-                <p style="padding: 4px 20px 4px 4px;"><a>Сценарий работы "Агент"</a></p>
-                <p style="padding: 4px 20px 4px 4px;"><a>Режим теста</a></p>
-                    </div>  </div>
+    <img class="shell-top__logo js-shell-top-logo" alt="" src="./files/syspanellogo_2.png">
+
 
     <!-- Название системы/режима -->
     <div class="shell-title-block js-shell-title-block">
@@ -159,8 +155,6 @@ a.text {
         <span class="shell-title js-shell-subtitle" title=""></span>
     </div>
 
-    <!-- Messenger -->
-    <!-- <div style="width: 20px; height: 20px; margin-right: 10px; cursor: pointer; background: cyan" title="XM Messenger Prototype" class="js-chat-button"></div> -->
 
     <!-- Язык интерфейса -->
     <div class="shell-top__lang js-shell-language"></div>
@@ -172,7 +166,7 @@ a.text {
             <div class="dropdown"><span>ИрГУПС</span>
                 <div class="dropdown-content" style="margin-left: -90px;">
                 <p style="padding: 4px 20px 4px 4px;"><a style="text-decoration: none;">О системе</a></p>
-                <p style="padding: 4px 20px 4px 4px;"><a href="index.html">Выйти</a></p>
+                <p style="padding: 4px 20px 4px 4px;"><a href="login.html">Выйти</a></p>
                     </div>
            </div>
         </div>
@@ -208,7 +202,7 @@ a.text {
         <div class="shell-menu__items js-menu-items"><div class="shell-menu__items-wrap">
     <div class="shell-menu__items-inner">
         <div class="shell-menu__item-wrap">
-            <a onclick="showConfirmation()" class="shell-menu__item js-menu-item" data-appid="19" title="Ведомости подачи и уборки">
+            <a href="doc_menu_vpu.html" class="shell-menu__item js-menu-item" data-appid="19" title="Ведомости подачи и уборки">
                 <img class="shell-menu__item-img " src="./files/IMAGES/AppID_19.png">
                 <svg class="shell-menu__favorite-icon shell-favorite-icon js-shell-menu__favorite-icon" viewBox="0 0 2000 2000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
                   
@@ -226,7 +220,7 @@ a.text {
             </a>
         </div>
         <div class="shell-menu__item-wrap">
-            <a onclick="showConfirmation2()" class="shell-menu__item js-menu-item" data-appid="1" title="Накладная">
+            <a href="doc_menu_invoice.html" class="shell-menu__item js-menu-item" data-appid="1" title="Накладная">
                 <img class="shell-menu__item-img " src="./files/IMAGES/AppID_1.png">
                 <svg class="shell-menu__favorite-icon shell-favorite-icon js-shell-menu__favorite-icon" viewBox="0 0 2000 2000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
                 
@@ -235,7 +229,7 @@ a.text {
             </a>
         </div>
         <div class="shell-menu__item-wrap">
-            <a onclick="showConfirmation3()" class="shell-menu__item js-menu-item" data-appid="11809" title="Накопительная ведомость">
+            <a href="doc_menu_nv.html" class="shell-menu__item js-menu-item" data-appid="11809" title="Накопительная ведомость">
                 <img class="shell-menu__item-img " src="./files/IMAGES/AppID_11809.png">
                 <svg class="shell-menu__favorite-icon shell-favorite-icon js-shell-menu__favorite-icon" viewBox="0 0 2000 2000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
                    
@@ -262,45 +256,21 @@ a.text {
             </a>
         </div>
         <div class="shell-menu__item-wrap">
-            <a onclick="Practicka()" class="shell-menu__item js-menu-item" data-appid="11809" title="Обучающий сценарий Эксперт">
-                <img class="shell-menu__item-img " src="https://sosh1nov.moy.su/2020/distant/Online-Education.png">
+            <a onclick="Practicka()" class="shell-menu__item js-menu-item" data-appid="11809" title="Обучающий сценарий Продвинутый">
+                <img class="shell-menu__item-img " src="https://static.tildacdn.com/tild3632-3336-4232-b165-386337626361/main.png">
                 <svg class="shell-menu__favorite-icon shell-favorite-icon js-shell-menu__favorite-icon" viewBox="0 0 2000 2000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
                    
                 </svg>
-                <span class="shell-menu__item-text">Обучающий сценарий "Эксперт"</span>
+                <span class="shell-menu__item-text">Режим теста</span>
             </a>
         </div>
+        
     </div>
 </div>
 </div>
     </div>
 </div>
 <script>
-    function showConfirmation() {
-        if (confirm("Опция в разработке, не все функции выполнены в полном обЪеме. Вы уверены, что хотите продолжить?")) {
-            window.location = "doc_menu_vpu.html";
-        }
-    }
-    function showConfirmation1() {
-        if (confirm("Опция в разработке, не все функции выполнены в полном обЪеме. Вы уверены, что хотите продолжить?")) {
-            window.location = "doc_menu.html";
-        }
-    }
-    function showConfirmation2() {
-        if (confirm("Опция в разработке, не все функции выполнены в полном обЪеме. Вы уверены, что хотите продолжить?")) {
-            window.location = "doc_menu_invoice.html";
-        }
-    }
-    function showConfirmation3() {
-        if (confirm("Опция в разработке, не все функции выполнены в полном обЪеме. Вы уверены, что хотите продолжить?")) {
-            window.location = "doc_menu_nv.html";
-        }
-    }
-    function showConfirmation4() {
-        if (confirm("Опция в разработке, не все функции выполнены в полном обЪеме. Вы уверены, что хотите продолжить?")) {
-            window.location = "UserScript.html";
-        }
-    }
     function Practicka(){
         alert('Идет работа над опцией');
     }

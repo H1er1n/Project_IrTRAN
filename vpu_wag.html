@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html><head>
+    <title>ЭТРАН</title>
+
+    <!-- Браузер, не зажёвывай меня в кэш! -->
+    <meta http-equiv="cache-control" content="max-age=0">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT">
+    <meta http-equiv="pragma" content="no-cache">
+
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width">-->
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+<link href="./files/preloader.05e9578ddfc67dd3594c.css" rel="stylesheet"><link href="./files/main.5995fb6faa064b522a0a.css" rel="stylesheet"><link rel="stylesheet" type="text/css" href="./files/vendors.b640cc19cb0bc4cee48d.css"><style>.picker_wrapper.no_alpha .picker_alpha{display:none}.picker_wrapper.no_editor .picker_editor{position:absolute;z-index:-1;opacity:0}.picker_wrapper.no_cancel .picker_cancel{display:none}.layout_default.picker_wrapper{display:flex;flex-flow:row wrap;justify-content:space-between;align-items:stretch;font-size:10px;width:25em;padding:.5em}.layout_default.picker_wrapper input,.layout_default.picker_wrapper button{font-size:1rem}.layout_default.picker_wrapper>*{margin:.5em}.layout_default.picker_wrapper::before{content:"";display:block;width:100%;height:0;order:1}.layout_default .picker_slider,.layout_default .picker_selector{padding:1em}.layout_default .picker_hue{width:100%}.layout_default .picker_sl{flex:1 1 auto}.layout_default .picker_sl::before{content:"";display:block;padding-bottom:100%}.layout_default .picker_editor{order:1;width:6.5rem}.layout_default .picker_editor input{width:100%;height:100%}.layout_default .picker_sample{order:1;flex:1 1 auto}.layout_default .picker_done,.layout_default .picker_cancel{order:1}.picker_wrapper{box-sizing:border-box;background:#f2f2f2;box-shadow:0 0 0 1px silver;cursor:default;font-family:sans-serif;color:#444;pointer-events:auto}.picker_wrapper:focus{outline:none}.picker_wrapper button,.picker_wrapper input{box-sizing:border-box;border:none;box-shadow:0 0 0 1px silver;outline:none}.picker_wrapper button:focus,.picker_wrapper button:active,.picker_wrapper input:focus,.picker_wrapper input:active{box-shadow:0 0 2px 1px #1e90ff}.picker_wrapper button{padding:.4em .6em;cursor:pointer;background-color:#f5f5f5;background-image:linear-gradient(0deg, gainsboro, transparent)}.picker_wrapper button:active{background-image:linear-gradient(0deg, transparent, gainsboro)}.picker_wrapper button:hover{background-color:#fff}.picker_selector{position:absolute;z-index:1;display:block;-webkit-transform:translate(-50%, -50%);transform:translate(-50%, -50%);border:2px solid #fff;border-radius:100%;box-shadow:0 0 3px 1px #67b9ff;background:currentColor;cursor:pointer}.picker_slider .picker_selector{border-radius:2px}.picker_hue{position:relative;background-image:linear-gradient(90deg, red, yellow, lime, cyan, blue, magenta, red);box-shadow:0 0 0 1px silver}.picker_sl{position:relative;box-shadow:0 0 0 1px silver;background-image:linear-gradient(180deg, white, rgba(255, 255, 255, 0) 50%),linear-gradient(0deg, black, rgba(0, 0, 0, 0) 50%),linear-gradient(90deg, #808080, rgba(128, 128, 128, 0))}.picker_alpha,.picker_sample{position:relative;background:linear-gradient(45deg, lightgrey 25%, transparent 25%, transparent 75%, lightgrey 75%) 0 0/2em 2em,linear-gradient(45deg, lightgrey 25%, white 25%, white 75%, lightgrey 75%) 1em 1em/2em 2em;box-shadow:0 0 0 1px silver}.picker_alpha .picker_selector,.picker_sample .picker_selector{background:none}.picker_editor input{font-family:monospace;padding:.2em .4em}.picker_sample::before{content:"";position:absolute;display:block;width:100%;height:100%;background:currentColor}.picker_arrow{position:absolute;z-index:-1}.picker_wrapper.popup{position:absolute;z-index:2;margin:1.5em}.picker_wrapper.popup,.picker_wrapper.popup .picker_arrow::before,.picker_wrapper.popup .picker_arrow::after{background:#f2f2f2;box-shadow:0 0 10px 1px rgba(0,0,0,.4)}.picker_wrapper.popup .picker_arrow{width:3em;height:3em;margin:0}.picker_wrapper.popup .picker_arrow::before,.picker_wrapper.popup .picker_arrow::after{content:"";display:block;position:absolute;top:0;left:0;z-index:-99}.picker_wrapper.popup .picker_arrow::before{width:100%;height:100%;-webkit-transform:skew(45deg);transform:skew(45deg);-webkit-transform-origin:0 100%;transform-origin:0 100%}.picker_wrapper.popup .picker_arrow::after{width:150%;height:150%;box-shadow:none}.popup.popup_top{bottom:100%;left:0}.popup.popup_top .picker_arrow{bottom:0;left:0;-webkit-transform:rotate(-90deg);transform:rotate(-90deg)}.popup.popup_bottom{top:100%;left:0}.popup.popup_bottom .picker_arrow{top:0;left:0;-webkit-transform:rotate(90deg) scale(1, -1);transform:rotate(90deg) scale(1, -1)}.popup.popup_left{top:0;right:100%}.popup.popup_left .picker_arrow{top:0;right:0;-webkit-transform:scale(-1, 1);transform:scale(-1, 1)}.popup.popup_right{top:0;left:100%}.popup.popup_right .picker_arrow{top:0;left:0}</style><style>body {--auth-window-bg-color:#a3bfff;--auth-window-border-color:transparent;--auth-window-btn-bg-color:#3f6cb7;--auth-window-btn-color:#fff;--auth-window-header-bg-color:#a3bfff;--auth-window-header-color:#fff;--auth-window-input-bg-color:#fff;--auth-window-input-border-color:transparent;--auth-window-input-color:#000;--auth-window-input-focus-border-color:#2571cb;--auth-window-logo-height:0px;--auth-window-logo-width:0px;--button-active-bg-color:#245693;--button-active-color:#ffffff;--button-bg-color:#7da5f0;--button-disabled-bg-color:#efefef;--button-disabled-color:#999999;--button-font-color:#ffffff;--button-hover-bg-color:#5086d6;--button-hover-color:#ffffff;--button-primary-bg-color:#3e6cb4;--button-primary-color:#ffffff;--button-primary-focus-bg-color:#154175;--button-primary-focus-color:#ffffff;--button-primary-hover-bg-color:#2a5696;--button-primary-hover-color:#ffffff;--button-secondary-bg-color:#7da5f0;--button-secondary-color:#ffffff;--button-secondary-focus-bg-color:#245693;--button-secondary-focus-color:#ffffff;--button-secondary-hover-bg-color:#5086d6;--button-secondary-hover-color:#ffffff;--color-base:#7da5f0;--dialog-close-bg-color:transparent;--dialog-close-bg-color-hover:red;--dialog-close-cross-color:#fff;--dialog-close-height:28px;--dialog-close-width:48px;--dialog-header-bg-color:#7da5f0;--dialog-main-bg-color:#fff;--dialog-title-color:#fff;--doc-list-details-header-bg-color:#e8e8e8;--doc-list-details-input-active-bg-color:#ffffff;--doc-list-details-input-active-color:#ed5114;--doc-list-details-input-bg-color:#c0c0c0;--doc-list-details-input-color:#406eb0;--doc-list-details-input-focus-bg-color:#ffffff;--doc-list-details-input-focus-color:#406eb0;--doc-list-editor-add-group-btn-color:#454545;--doc-list-editor-add-group-btn-hover-color:#171717;--doc-list-editor-borders-color:#c1c1c1;--doc-list-editor-focus-line-color:#b8b8b8;--doc-list-editor-header-input-bg-color:transparent;--doc-list-editor-header-input-focus-bg-color:#fff;--doc-list-editor-header-input-focus-color:#454545;--doc-list-editor-header-input-hover-bg-color:transparent;--doc-list-editor-header-input-hover-color:#fff;--doc-list-editor-title-color:#fff;--dop-color:#3e6cb6;--dropdown-active-bg-color:#3e6cb6;--dropdown-active-color:#fff;--dropdown-bg-color:#fff;--dropdown-font-color:#000;--dropdown-hover-bg-color:#7ea6f0;--dropdown-hover-color:#fff;--element-bg-color:#e3e2ff;--element-border-color:#c1c1c1;--element-disabled-bg-color:#ffffde;--element-disabled-opacity:1;--element-focus-bg-color:#e3e2ff;--element-focus-border-color:#2571cb;--element-font-color:#000;--element-hover-bg-color:#2571cb;--element-hover-font-color:#fff;--element-selected-bg-color:#817cff;--element-selected-font-color:#fff;--grid-active-column-bg-color:#154175;--grid-active-column-font-color:#fff;--grid-active-row-bg-color:#2165b6;--grid-active-row-font-color:#fff;--grid-cell-border-color:#eceeef;--grid-ctx-menu-bg-color:#e8e8e8;--grid-ctx-menu-border-color:#c1c1c1;--grid-ctx-menu-color:#595959;--grid-font-color:#000;--grid-group-active-row-bg-color:#6493cc;--grid-group-bg-color:#c0c0c0;--grid-group-summary-bg-color:#2165b6;--grid-header-cell-border-color:#dbdbdb;--grid-marked-bg-color:#7da5f0;--grid-row-bg-color:#fff;--grid-row-hover-bg-color:rgba(0,0,0,.075);--grid-summary-bg-color:#3e6cb6;--grid-summary-cell-bg-color:#c6daff;--grid-summary-color:#fff;--grid-summary-hover-bg-color:#4c79c2;--hint-button-font-color:#1b4572;--hint-icon-color:#7da5f0;--hint-main-color:#1b4572;--input-bottom-padding:1px;--input-top-padding:1px;--lang-toggle-bg-color:transparent;--lang-toggle-color:#fff;--main-header-bg-color:#7da5f0;--main-header-color:#fff;--main-header-height:44px;--main-header-logo-height:30px;--main-header-logo-width:87px;--message-basic-color:#22b14c;--message-error-color:#a52a2a;--message-font-color:#ffffff;--message-warning-color:#d79e36;--scroll-color:#f2f2f2;--scroll-slider-color:#666;--scroll-thin:14px;--shell-menu-data-bg-color:#fff;--shell-menu-group-color:#3e6cb6;--shell-menu-item-active-bg-color:#4f85eb;--shell-menu-item-bg-color:#efefef;--shell-menu-item-color:#545556;--shell-menu-item-hover-bg-color:#4f85eb;--shell-menu-item-hover-color:#fff;--spinner-color:#5e6672;--tabs-border-color:#c1c1c1;--tree-row-bg-color:#fff;--tree-row-color:#333;--tree-row-focus-bg-color:rgba(0,0,0,0.075);--tree-row-hover-bg-color:rgba(0,0,0,0.075);--xm-container-label-bg-color:#fff;}</style></head>
+<body>
+
+<div class="dialog xm-windows-dialog xm-window-name-VPU_WAG_wnd xm-window-for-document js-dialog dialog-active">
+    <!-- Диалог -->
+    <div class="dialog-main-area js-dialog-window dialog-has-subtitle dialog--full-height">
+
+        <div class="dialog-top js-dialog-header">
+            <!-- Заголовок диалога -->
+            <div class="dialog-title-block js-dialog-title-block">
+                <div class="dialog-title js-dialog-title" title="Вагоны по ведомостям подачи и уборки">Вагоны по ведомостям подачи и уборки</div>
+                <div class="dialog-subtitle"><span class="dialog-subtitle__text js-dialog-subtitle" aria-expanded="false">Не выбрана памятка уборки!</span></div>
+            </div>
+            <!-- Кнопка закрытия -->
+            <div class="dialog-close js-dialog-close"></div>
+        </div>
+
+        <div class="dialog__body js-dialog-body">
+            <!-- Данные диалога -->
+            <div class="dialog-data js-dialog-data"><div class="xm-object xm-container xm-window" style="" direction="vertical" xm-name="VPU_WAG_wnd" xm-visible="true" xm-enabled="true" xm-caption="Вагоны по ведомостям подачи и уборки" xm-invalid="false" data-hint-id="VPU_WAG_wnd" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="vertical"><div class="xm-object xm-container fixed-doc-header" style="" direction="vertical" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data fixed-doc-header__data" style="min-width: 870px;" direction="vertical"><div class="xm-object xm-toolbar btn-toolbar xm-doc-second-toolbar" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-toolbar-data js-toolbar-data xm-doc-toolbar" style="width: 870px;"><div class="btn-group xm-sub-row-control-group" role="group" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true" style=""><button class="xm-object xm-button btn btn-secondary" style="" xm-caption="Применить" xm-action-onclick="" xm-visible="true" xm-enabled="false" xm-invalid="false" data-hint-id="xm-sub-apply" data-has-xm-object="true" disabled="disabled" data-grid-name="VPU_WAG">
+    
+    <img class="xm-button-icon js-button-icon" style="" data-icon-name="">
+    <span class="btn-caption js-button-caption" style="">Применить</span>
+</button><button class="xm-object xm-button btn btn-secondary" style="" xm-caption="Отменить" xm-action-onclick="" xm-visible="true" xm-enabled="true" xm-invalid="false" data-hint-id="xm-sub-cancel" data-has-xm-object="true" data-grid-name="VPU_WAG">
+    
+    <img class="xm-button-icon js-button-icon" style="" data-icon-name="">
+    <span class="btn-caption js-button-caption" style="">Отменить</span>
+</button></div><div class="btn-group xm-btn-group-operations xm-btn-group-operations-toolbar" role="group" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true" style=""><button class="xm-object xm-button btn btn-secondary" style="" xm-caption="Предыдущий" xm-action-onclick="" xm-visible="true" xm-enabled="false" xm-invalid="false" data-hint-id="xm-sub-prev-row" disabled="disabled" data-has-xm-object="true">
+    
+    <img class="xm-button-icon js-button-icon" style="" data-icon-name="">
+    <span class="btn-caption js-button-caption" style="">Предыдущий</span>
+</button><button class="xm-object xm-button btn btn-secondary" style="" xm-caption="Следующий" xm-action-onclick="" xm-visible="true" xm-enabled="false" xm-invalid="false" data-hint-id="xm-sub-next-row" disabled="disabled" data-has-xm-object="true">
+    
+    <img class="xm-button-icon js-button-icon" style="" data-icon-name="">
+    <span class="btn-caption js-button-caption" style="">Следующий</span>
+</button><button class="xm-object xm-button btn btn-secondary" style="" xm-caption="Добавить" xm-action-onclick="" xm-visible="true" xm-enabled="false" xm-invalid="false" data-hint-id="xm-sub-add" disabled="disabled" data-has-xm-object="true">
+    
+    <img class="xm-button-icon js-button-icon" style="" data-icon-name="">
+    <span class="btn-caption js-button-caption" style="">Добавить</span>
+</button><button class="xm-object xm-button btn btn-secondary" style="" xm-caption="Копировать" xm-action-onclick="" xm-visible="true" xm-enabled="false" xm-invalid="false" data-hint-id="xm-sub-copy" disabled="disabled" data-has-xm-object="true">
+    
+    <img class="xm-button-icon js-button-icon" style="" data-icon-name="">
+    <span class="btn-caption js-button-caption" style="">Копировать</span>
+</button></div></div>
+</div></div>
+</div><div class="xm-object xm-container" style="" direction="vertical" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="vertical"><div class="xm-object xm-container" style="" direction="horizontal" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="horizontal"><div class="xm-gui-labeled-object form-group" style="" xm-name="id_87" xm-visible="true" xm-enabled="true" xm-invalid="false" data-hint-id="id_87" data-has-xm-object="true" data-xm-control-type="combobox" data-linked-param="NUM_PAM_UB_INDEX" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="">Номер памятки уборки</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-combobox-select2" style="width: 116px;"><div class="xm-object xm-combobox form-control select2-hidden-accessible" aria-hidden="true"></div><span class="select2 select2-container select2-container--bootstrap select2-container--focus" dir="ltr" style="width: auto;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-49sj-container"><span class="select2-selection__rendered" id="select2-49sj-container"><span class="select2-selection__placeholder">Выберите элемент списка</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_172" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_172" data-has-xm-object="true" data-xm-control-type="numedit" data-linked-param="NO_NUM_PAM_UB" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="">Номер памятки уборки</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 116px;"><input class="xm-object xm-edit form-control" type="text" value="" xm-displayformat="number"></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_155" xm-visible="true" xm-enabled="true" xm-invalid="false" data-hint-id="id_155" data-has-xm-object="true" data-xm-control-type="checkbox" data-linked-param="NUM_PAM_UB_ZERO" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible" style="">Без памятки уборки</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-checkbox" style=""><label class="xm-checkbox">
+    <input type="checkbox" class="xm-object xm-checkbox__input form-control">
+    <span class="xm-checkbox__mark"></span>
+</label></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_149" xm-visible="true" xm-enabled="false" xm-invalid="false" data-hint-id="id_149" data-has-xm-object="true" data-xm-control-type="datepicker" data-linked-param="DATE_PAM_UB" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible" style="">Дата и время памятки уборки</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-labeled-object-control-datepicker-datetime" style=""><div class="xm-object input-group date">
+    <input type="text" class="xm-datepicker form-control js-datepicker" disabled="">
+    <span class="input-group-addon">
+        <span class="glyphicon glyphicon-calendar"></span>
+    </span>
+</div></div>
+</div></div>
+</div><div class="xm-object xm-container" style="" direction="vertical" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="vertical"><div class="xm-gui-labeled-object form-group" style="" xm-name="id_859" xm-visible="true" xm-enabled="true" xm-invalid="false" data-hint-id="id_859" data-has-xm-object="true" data-xm-control-type="numedit" data-linked-param="NUM_PAM_POD" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="">Номер памятки подачи</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 116px;"><input class="xm-object xm-edit form-control" type="text" value="" xm-displayformat="number"></div>
+</div></div>
+</div><div class="xm-object xm-container" style="" direction="horizontal" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="horizontal"><div class="xm-gui-labeled-object form-group" style="" xm-name="id_592" xm-visible="true" xm-enabled="true" xm-invalid="false" data-hint-id="id_592" data-has-xm-object="true" data-xm-control-type="edit" data-linked-param="VAG_NUM_STR" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="">Номер вагона</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 116px;"><input class="xm-object xm-edit form-control js-xm-edit" type="text" value=""></div>
+</div><div class="xm-gui-labeled-object form-group empty-label" style="" xm-name="id_864" xm-visible="true" xm-enabled="false" xm-invalid="false" data-hint-id="id_864" data-has-xm-object="true" data-xm-control-type="edit" data-linked-param="VAG_TYPE_NAME" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-align-left" style=""></label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 316px;"><input class="xm-object xm-edit form-control js-xm-edit xm-edit--simpleShow" type="text" value="" disabled="disabled"></div>
+</div></div>
+</div><div class="xm-object xm-container" style="" direction="vertical" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="vertical"><div class="xm-gui-labeled-object form-group" style="" xm-name="id_867" xm-visible="true" xm-enabled="true" xm-invalid="false" data-hint-id="id_867" data-has-xm-object="true" data-xm-control-type="quicksearch" data-linked-param="VAG_PRINADL" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="">Принадлежность вагона</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 400px;"><div class="quicksearch input-group search">
+    <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input class="form-control js-quicksearch tt-input" placeholder="Поиск" typeahead-append-to-body="true" type="text" data-fnm-ignore="" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-101"></div></div></span>
+    <span class="input-group-addon quicksearch-button js-quicksearch-button" tabindex="-1">
+        <span class="glyphicon glyphicon-search"></span>
+    </span>
+</div></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_869" xm-visible="true" xm-enabled="true" xm-invalid="false" data-hint-id="id_869" data-has-xm-object="true" data-xm-control-type="checkbox" data-linked-param="SNG" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible" style="">Вагон другой администрации</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-checkbox" style=""><label class="xm-checkbox">
+    <input type="checkbox" class="xm-object xm-checkbox__input form-control">
+    <span class="xm-checkbox__mark"></span>
+</label></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_1477" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_1477" data-has-xm-object="true" data-xm-control-type="checkbox" data-linked-param="LASTVAG" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="width: 275px;">Последний вагон сцепного транспортера</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-checkbox" style=""><label class="xm-checkbox">
+    <input type="checkbox" class="xm-object xm-checkbox__input form-control">
+    <span class="xm-checkbox__mark"></span>
+</label></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_1584" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_1584" data-has-xm-object="true" data-xm-control-type="numedit" data-linked-param="KOL_AXLES" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="width: 350px;">Суммарное количество осей в сцепном транспортере</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 82px;"><input class="xm-object xm-edit form-control" type="text" value="" xm-displayformat="number"></div>
+</div></div>
+</div><div class="xm-object xm-container" style="" direction="horizontal" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="horizontal"><div class="xm-gui-labeled-object form-group" style="" xm-name="id_870" xm-visible="true" xm-enabled="true" xm-invalid="false" data-hint-id="id_870" data-has-xm-object="true" data-xm-control-type="numedit" data-linked-param="VAG_LENGTH" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="">Длина вагона</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 82px;"><input class="xm-object xm-edit form-control" type="text" value="" xm-displayformat="number"></div>
+</div><p class="xm-object xm-label" style="" xm-visible="true" xm-enabled="true" xm-caption="для расчета платы за нахождение вагона на МОП" xm-invalid="false" data-has-xm-object="true">
+    <img class="xm-label-icon js-label-icon" style="" data-icon-name="" data-icon-id="">
+    <span class="xm-label-caption js-label-caption">для расчета платы за нахождение вагона на МОП</span>
+</p></div>
+</div><div class="xm-object xm-container" style="" direction="vertical" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="vertical"><div class="xm-gui-labeled-object form-group" style="" xm-name="id_880" xm-visible="true" xm-enabled="true" xm-invalid="false" data-hint-id="id_880" data-has-xm-object="true" data-xm-control-type="quicksearch" data-linked-param="VAG_GR" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="">Группа вагона</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 400px;"><div class="quicksearch input-group search">
+    <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input class="form-control js-quicksearch tt-input" placeholder="Поиск" typeahead-append-to-body="true" type="text" data-fnm-ignore="" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-102"></div></div></span>
+    <span class="input-group-addon quicksearch-button js-quicksearch-button" tabindex="-1">
+        <span class="glyphicon glyphicon-search"></span>
+    </span>
+</div></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_881" xm-visible="true" xm-enabled="true" xm-invalid="false" data-hint-id="id_881" data-has-xm-object="true" data-xm-control-type="quicksearch" data-linked-param="KOD_OPER" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="">Операция</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 400px;"><div class="quicksearch input-group search">
+    <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input class="form-control js-quicksearch tt-input" placeholder="Поиск" typeahead-append-to-body="true" type="text" data-fnm-ignore="" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-103"></div></div></span>
+    <span class="input-group-addon quicksearch-button js-quicksearch-button" tabindex="-1">
+        <span class="glyphicon glyphicon-search"></span>
+    </span>
+</div></div>
+</div></div>
+</div><div class="xm-object xm-container" style="" direction="horizontal" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="horizontal"><div class="xm-gui-labeled-object form-group" style="" xm-name="id_882" xm-visible="true" xm-enabled="true" xm-invalid="false" data-hint-id="id_882" data-has-xm-object="true" data-xm-control-type="quicksearch" data-linked-param="FR_ID" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="">Груз</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 400px;"><div class="quicksearch input-group search">
+    <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input class="form-control js-quicksearch tt-input" placeholder="Поиск" typeahead-append-to-body="true" type="text" data-fnm-ignore="" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-104"></div></div></span>
+    <span class="input-group-addon quicksearch-button js-quicksearch-button" tabindex="-1">
+        <span class="glyphicon glyphicon-search"></span>
+    </span>
+</div></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_788" xm-visible="true" xm-enabled="false" xm-invalid="false" data-hint-id="id_788" data-has-xm-object="true" data-xm-control-type="edit" data-linked-param="FR_CODE_ETSNG" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="width: 75px;">Код ЕТСНГ</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style=""><input class="xm-object xm-edit form-control js-xm-edit xm-edit--simpleShow" type="text" value="" disabled="disabled"></div>
+</div></div>
+</div><div class="xm-object xm-container" style="" direction="horizontal" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="horizontal"><div class="xm-gui-labeled-object form-group" style="" xm-name="id_1411" xm-visible="true" xm-enabled="true" xm-invalid="false" data-hint-id="id_1411" data-has-xm-object="true" data-xm-control-type="datepicker" data-linked-param="POD_DATETIME" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible" style="">Дата и время подачи вагона</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-labeled-object-control-datepicker-datetime" style=""><div class="xm-object input-group date">
+    <input type="text" class="xm-datepicker form-control js-datepicker">
+    <span class="input-group-addon">
+        <span class="glyphicon glyphicon-calendar"></span>
+    </span>
+</div></div>
+</div><p class="xm-object xm-label" style="" xm-visible="true" xm-enabled="true" xm-caption="по московскому времени" xm-invalid="false" data-has-xm-object="true">
+    <img class="xm-label-icon js-label-icon" style="" data-icon-name="" data-icon-id="">
+    <span class="xm-label-caption js-label-caption">по московскому времени</span>
+</p></div>
+</div><div class="xm-object xm-container" style="" direction="horizontal" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="horizontal"><div class="xm-gui-labeled-object form-group" style="" xm-name="id_1412" xm-visible="true" xm-enabled="true" xm-invalid="false" data-hint-id="id_1412" data-has-xm-object="true" data-xm-control-type="datepicker" data-linked-param="END_OPER_DATETIME" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible" style="">Время завершения грузовой операции</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-labeled-object-control-datepicker-datetime" style=""><div class="xm-object input-group date">
+    <input type="text" class="xm-datepicker form-control js-datepicker">
+    <span class="input-group-addon">
+        <span class="glyphicon glyphicon-calendar"></span>
+    </span>
+</div></div>
+</div><p class="xm-object xm-label" style="" xm-visible="true" xm-enabled="true" xm-caption="по московскому времени" xm-invalid="false" data-has-xm-object="true">
+    <img class="xm-label-icon js-label-icon" style="" data-icon-name="" data-icon-id="">
+    <span class="xm-label-caption js-label-caption">по московскому времени</span>
+</p></div>
+</div><div class="xm-object xm-container" style="" direction="vertical" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="vertical"><div class="xm-gui-labeled-object form-group" style="" xm-name="id_887" xm-visible="true" xm-enabled="true" xm-invalid="false" data-hint-id="id_887" data-has-xm-object="true" data-xm-control-type="checkbox" data-linked-param="HOLIDAYS" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="width: 225px;">Использ. коэфф. вых. и праздн. дн.</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-checkbox" style=""><label class="xm-checkbox">
+    <input type="checkbox" class="xm-object xm-checkbox__input form-control">
+    <span class="xm-checkbox__mark"></span>
+</label></div>
+</div></div>
+</div><div class="xm-object xm-container" style="" direction="horizontal" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="horizontal"><div class="xm-gui-labeled-object form-group" style="" xm-name="id_794" xm-visible="true" xm-enabled="true" xm-invalid="false" data-hint-id="id_794" data-has-xm-object="true" data-xm-control-type="timeedit" data-linked-param="TIME_NEOPL_VAG" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="width: 325px;">Дополнительное неоплачиваемое время для вагона</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-labeled-object-control-timepicker" style=""><input type="text" class="form-control timeedit is-timeEntry" ondragstart="return false;" ondrop="return false;"></div>
+</div><button class="xm-object xm-button btn btn-secondary" style="" xm-caption="Из договора" xm-action-onclick="" xm-name="id_795" xm-visible="true" xm-enabled="true" xm-invalid="false" data-hint-id="id_795" data-has-xm-object="true" data-xm-control-type="button" data-linked-param="TIME_NEOPL_VAG" data-is-required-param="false" data-sub="VPU_WAG">
+    
+    <img class="xm-button-icon js-button-icon" style="" data-icon-name="">
+    <span class="btn-caption js-button-caption" style="">Из договора</span>
+</button></div>
+</div><div class="xm-object xm-container" style="" direction="horizontal" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="horizontal"><div class="xm-gui-labeled-object form-group" style="" xm-name="id_129" xm-visible="true" xm-enabled="true" xm-invalid="false" data-hint-id="id_129" data-has-xm-object="true" data-xm-control-type="timeedit" data-linked-param="TIME_TEH_MOP" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="width: 425px;">Технологическое время для расчета платы за нахождение на ПОП</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-labeled-object-control-timepicker" style=""><input type="text" class="form-control timeedit is-timeEntry" ondragstart="return false;" ondrop="return false;"></div>
+</div></div>
+</div><div class="xm-object xm-container" style="" direction="horizontal" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="horizontal"><div class="xm-gui-labeled-object form-group" style="" xm-name="id_913" xm-visible="true" xm-enabled="true" xm-invalid="false" data-hint-id="id_913" data-has-xm-object="true" data-xm-control-type="quicksearch" data-linked-param="CONTRACTOR_ID" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="">Контрагент</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 400px;"><div class="quicksearch input-group search">
+    <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input class="form-control js-quicksearch tt-input" placeholder="Поиск" typeahead-append-to-body="true" type="text" data-fnm-ignore="" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-105"></div></div></span>
+    <span class="input-group-addon quicksearch-button js-quicksearch-button" tabindex="-1">
+        <span class="glyphicon glyphicon-search"></span>
+    </span>
+</div></div>
+</div><p class="xm-object xm-label" style="" xm-visible="true" xm-enabled="true" xm-caption="ОКПО" xm-invalid="false" data-has-xm-object="true">
+    <img class="xm-label-icon js-label-icon" style="" data-icon-name="" data-icon-id="">
+    <span class="xm-label-caption js-label-caption">ОКПО</span>
+</p><div class="xm-gui-labeled-object form-group empty-label" style="" xm-name="id_949" xm-visible="true" xm-enabled="false" xm-invalid="false" data-hint-id="id_949" data-has-xm-object="true" data-xm-control-type="edit" data-linked-param="OKPO" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-align-left" style=""></label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 116px;"><input class="xm-object xm-edit form-control js-xm-edit xm-edit--simpleShow" type="text" value="" disabled="disabled"></div>
+</div><p class="xm-object xm-label" style="" xm-visible="true" xm-enabled="true" xm-caption="ИНН" xm-invalid="false" data-has-xm-object="true">
+    <img class="xm-label-icon js-label-icon" style="" data-icon-name="" data-icon-id="">
+    <span class="xm-label-caption js-label-caption">ИНН</span>
+</p><div class="xm-gui-labeled-object form-group empty-label" style="" xm-name="id_950" xm-visible="true" xm-enabled="false" xm-invalid="false" data-hint-id="id_950" data-has-xm-object="true" data-xm-control-type="edit" data-linked-param="INN" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-align-left" style=""></label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 116px;"><input class="xm-object xm-edit form-control js-xm-edit xm-edit--simpleShow" type="text" value="" disabled="disabled"></div>
+</div></div>
+</div><div class="xm-object xm-container" style="" direction="vertical" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="vertical"><div class="xm-gui-labeled-object form-group" style="" xm-name="id_951" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_951" data-has-xm-object="true" data-xm-control-type="timeedit" data-linked-param="TIME_CONTRACTOR_I" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="width: 425px;">Используется неоплачиваемое время + время на расформирование</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-labeled-object-control-timepicker" style=""><input type="text" class="form-control timeedit is-timeEntry" ondragstart="return false;" ondrop="return false;"></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_130" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_130" data-has-xm-object="true" data-xm-control-type="timeedit" data-linked-param="TIME_CONTRACTOR_I" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="width: 425px;">Используется неоплачиваемое время для контрагента</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-labeled-object-control-timepicker" style=""><input type="text" class="form-control timeedit is-timeEntry" ondragstart="return false;" ondrop="return false;"></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_914" xm-visible="true" xm-enabled="true" xm-invalid="false" data-hint-id="id_914" data-has-xm-object="true" data-xm-control-type="quicksearch" data-linked-param="NAME_TIME_OBOROT_ID" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="">Выбор операции для срока оборота</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 400px;"><div class="quicksearch input-group search">
+    <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input class="form-control js-quicksearch tt-input" placeholder="Поиск" typeahead-append-to-body="true" type="text" data-fnm-ignore="" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-106"></div></div></span>
+    <span class="input-group-addon quicksearch-button js-quicksearch-button" tabindex="-1">
+        <span class="glyphicon glyphicon-search"></span>
+    </span>
+</div></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_552" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_552" data-has-xm-object="true" data-xm-control-type="timeedit" data-linked-param="TIME_OB_DS" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="width: 200px;">Используется время оборота:</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-labeled-object-control-timepicker" style=""><input type="text" class="form-control timeedit is-timeEntry" ondragstart="return false;" ondrop="return false;"></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_553" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_553" data-has-xm-object="true" data-xm-control-type="timeedit" data-linked-param="TIME_OB_DS_SDW" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="width: 350px;">Используется время оборота для сдвоенных операций:</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-labeled-object-control-timepicker" style=""><input type="text" class="form-control timeedit is-timeEntry" ondragstart="return false;" ondrop="return false;"></div>
+</div></div>
+</div><div class="xm-object xm-container" style="" direction="vertical" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="vertical"><div class="xm-gui-labeled-object form-group" style="" xm-name="id_915" xm-visible="true" xm-enabled="true" xm-invalid="false" data-hint-id="id_915" data-has-xm-object="true" data-xm-control-type="checkbox" data-linked-param="VAG_ZAMWREM" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="width: 375px;">Замена неопл. врем. или врем. оборота для данного вагона</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-checkbox" style=""><label class="xm-checkbox">
+    <input type="checkbox" class="xm-object xm-checkbox__input form-control">
+    <span class="xm-checkbox__mark"></span>
+</label></div>
+</div></div>
+</div><div class="xm-object xm-container xm-hidden-children" style="" direction="horizontal" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="horizontal"><div class="xm-gui-labeled-object form-group" style="" xm-name="id_160" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_160" data-has-xm-object="true" data-xm-control-type="timeedit" data-linked-param="TIME_NEOPL_SPEC" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="width: 250px;">Специальное неопл. время по вагону</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-labeled-object-control-timepicker" style=""><input type="text" class="form-control timeedit is-timeEntry" ondragstart="return false;" ondrop="return false;"></div>
+</div></div>
+</div><div class="xm-object xm-container xm-hidden-children" style="" direction="horizontal" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="horizontal"><div class="xm-gui-labeled-object form-group" style="" xm-name="id_161" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_161" data-has-xm-object="true" data-xm-control-type="timeedit" data-linked-param="TIME_OBOROT_SPEC" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="width: 250px;">Специальное время оборота по вагону</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-labeled-object-control-timepicker" style=""><input type="text" class="form-control timeedit is-timeEntry" ondragstart="return false;" ondrop="return false;"></div>
+</div></div>
+</div><div class="xm-object xm-container" style="" direction="horizontal" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="horizontal"><div class="xm-gui-labeled-object form-group" style="" xm-name="id_105" xm-visible="true" xm-enabled="true" xm-invalid="false" data-hint-id="id_105" data-has-xm-object="true" data-xm-control-type="timeedit" data-linked-param="NORM_TIME" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="width: 475px;">Время нахождения вагона на подъездном пути по норме ( код "Ж" для КОО-4):</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-labeled-object-control-timepicker" style=""><input type="text" class="form-control timeedit is-timeEntry" ondragstart="return false;" ondrop="return false;"></div>
+</div></div>
+</div><div class="xm-object xm-container" style="" direction="vertical" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="vertical"><div class="xm-gui-labeled-object form-group" style="" xm-name="id_1073" xm-visible="true" xm-enabled="false" xm-invalid="false" data-hint-id="id_1073" data-has-xm-object="true" data-xm-control-type="timeedit" data-linked-param="ALL_TIME" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="width: 300px;">Время нахождения под грузовой операцией</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-labeled-object-control-timepicker" style=""><input type="text" class="form-control timeedit is-timeEntry" ondragstart="return false;" ondrop="return false;" disabled="disabled"></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_1074" xm-visible="true" xm-enabled="false" xm-invalid="false" data-hint-id="id_1074" data-has-xm-object="true" data-xm-control-type="numedit" data-linked-param="RASCH_TIME" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="width: 300px;">Расч. время нахожд. под гр. операцией (час)</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 82px;"><input class="xm-object xm-edit form-control" type="text" value="" xm-displayformat="number" disabled="disabled"></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_1075" xm-visible="true" xm-enabled="false" xm-invalid="false" data-hint-id="id_1075" data-has-xm-object="true" data-xm-control-type="numedit" data-linked-param="PLAT_TIME" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="width: 300px;">Время для расчета платы (час)</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 82px;"><input class="xm-object xm-edit form-control" type="text" value="" xm-displayformat="number" disabled="disabled"></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_1076" xm-visible="true" xm-enabled="false" xm-invalid="false" data-hint-id="id_1076" data-has-xm-object="true" data-xm-control-type="numedit" data-linked-param="SHTRAF_TIME" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="width: 300px;">Время для расчета штрафа (час)</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 82px;"><input class="xm-object xm-edit form-control" type="text" value="" xm-displayformat="number" disabled="disabled"></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_526" xm-visible="true" xm-enabled="false" xm-invalid="false" data-hint-id="id_526" data-has-xm-object="true" data-xm-control-type="numedit" data-linked-param="LOCATE_TIME" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="width: 300px;">Время для расчета платы за нахожд. (час)</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 82px;"><input class="xm-object xm-edit form-control" type="text" value="" xm-displayformat="number" disabled="disabled"></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_1081" xm-visible="true" xm-enabled="true" xm-invalid="false" data-hint-id="id_1081" data-has-xm-object="true" data-xm-control-type="numedit" data-linked-param="KRATN" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="">Кратность платы</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 30px;"><input class="xm-object xm-edit form-control" type="text" value="" xm-displayformat="number"></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_1085" xm-visible="true" xm-enabled="true" xm-invalid="false" data-hint-id="id_1085" data-has-xm-object="true" data-xm-control-type="checkbox" data-linked-param="VAG_ZAMENA" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="width: 300px;">Вагон подан взамен вагона другой группы</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-checkbox" style=""><label class="xm-checkbox">
+    <input type="checkbox" class="xm-object xm-checkbox__input form-control">
+    <span class="xm-checkbox__mark"></span>
+</label></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_1087" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_1087" data-has-xm-object="true" data-xm-control-type="quicksearch" data-linked-param="VAG_GR_ZAMENA" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="">Вагон подан взамен</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 400px;"><div class="quicksearch input-group search">
+    <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input class="form-control js-quicksearch tt-input" placeholder="Поиск" typeahead-append-to-body="true" type="text" data-fnm-ignore="" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-107"></div></div></span>
+    <span class="input-group-addon quicksearch-button js-quicksearch-button" tabindex="-1">
+        <span class="glyphicon glyphicon-search"></span>
+    </span>
+</div></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_1089" xm-visible="true" xm-enabled="true" xm-invalid="false" data-hint-id="id_1089" data-has-xm-object="true" data-xm-control-type="checkbox" data-linked-param="SDW_OPER" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible" style="">Сдвоенные операции</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-checkbox" style=""><label class="xm-checkbox">
+    <input type="checkbox" class="xm-object xm-checkbox__input form-control">
+    <span class="xm-checkbox__mark"></span>
+</label></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_1090" xm-visible="true" xm-enabled="true" xm-invalid="false" data-hint-id="id_1090" data-has-xm-object="true" data-xm-control-type="checkbox" data-linked-param="REFR_VAG_BEZ_PODD_REJIMA" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="width: 375px;">Рефрижераторный вагон без поддержания режима</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-checkbox" style=""><label class="xm-checkbox">
+    <input type="checkbox" class="xm-object xm-checkbox__input form-control">
+    <span class="xm-checkbox__mark"></span>
+</label></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_1091" xm-visible="true" xm-enabled="true" xm-invalid="false" data-hint-id="id_1091" data-has-xm-object="true" data-xm-control-type="checkbox" data-linked-param="TRANS_16OS_BEZ_OBSL_BRIGAD" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="width: 375px;">Транспортеры 16-осные без обслуживающих бригад</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-checkbox" style=""><label class="xm-checkbox">
+    <input type="checkbox" class="xm-object xm-checkbox__input form-control">
+    <span class="xm-checkbox__mark"></span>
+</label></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_1092" xm-visible="true" xm-enabled="true" xm-invalid="false" data-hint-id="id_1092" data-has-xm-object="true" data-xm-control-type="checkbox" data-linked-param="VAG_8_OS" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="width: 375px;">8-осный вагон</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-checkbox" style=""><label class="xm-checkbox">
+    <input type="checkbox" class="xm-object xm-checkbox__input form-control">
+    <span class="xm-checkbox__mark"></span>
+</label></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_1093" xm-visible="true" xm-enabled="true" xm-invalid="false" data-hint-id="id_1093" data-has-xm-object="true" data-xm-control-type="checkbox" data-linked-param="PR_SMESH_JD_VOD_SOOB" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="width: 375px;">Прямое смешанное ж.д.-водное сообщение (по форме ГУ-28)</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-checkbox" style=""><label class="xm-checkbox">
+    <input type="checkbox" class="xm-object xm-checkbox__input form-control">
+    <span class="xm-checkbox__mark"></span>
+</label></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_1094" xm-visible="true" xm-enabled="true" xm-invalid="false" data-hint-id="id_1094" data-has-xm-object="true" data-xm-control-type="checkbox" data-linked-param="SNG_BEZ_1_3" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="width: 375px;">Другой администрации без 1.3</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-checkbox" style=""><label class="xm-checkbox">
+    <input type="checkbox" class="xm-object xm-checkbox__input form-control">
+    <span class="xm-checkbox__mark"></span>
+</label></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_1095" xm-visible="true" xm-enabled="true" xm-invalid="false" data-hint-id="id_1095" data-has-xm-object="true" data-xm-control-type="checkbox" data-linked-param="PEREVALKA_SHIR_NA_UZ_KOL" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="width: 375px;">Перевалка широкой на узкую колею</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-checkbox" style=""><label class="xm-checkbox">
+    <input type="checkbox" class="xm-object xm-checkbox__input form-control">
+    <span class="xm-checkbox__mark"></span>
+</label></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_1096" xm-visible="true" xm-enabled="true" xm-invalid="false" data-hint-id="id_1096" data-has-xm-object="true" data-xm-control-type="checkbox" data-linked-param="VAG_GUP_REFSERVICE" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="width: 375px;">Вагон ГУП "Рефсервис"</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-checkbox" style=""><label class="xm-checkbox">
+    <input type="checkbox" class="xm-object xm-checkbox__input form-control">
+    <span class="xm-checkbox__mark"></span>
+</label></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_1097" xm-visible="true" xm-enabled="true" xm-invalid="false" data-hint-id="id_1097" data-has-xm-object="true" data-xm-control-type="checkbox" data-linked-param="BEZ_POGRUZKI" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="width: 375px;">Без погрузки</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-checkbox" style=""><label class="xm-checkbox">
+    <input type="checkbox" class="xm-object xm-checkbox__input form-control">
+    <span class="xm-checkbox__mark"></span>
+</label></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_1098" xm-visible="true" xm-enabled="true" xm-invalid="false" data-hint-id="id_1098" data-has-xm-object="true" data-xm-control-type="checkbox" data-linked-param="BEZ_VYGRUZKI" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="width: 375px;">Без выгрузки</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-checkbox" style=""><label class="xm-checkbox">
+    <input type="checkbox" class="xm-object xm-checkbox__input form-control">
+    <span class="xm-checkbox__mark"></span>
+</label></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_1099" xm-visible="true" xm-enabled="true" xm-invalid="false" data-hint-id="id_1099" data-has-xm-object="true" data-xm-control-type="checkbox" data-linked-param="OSTAVLEN" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="width: 375px;">Оставлен</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-checkbox" style=""><label class="xm-checkbox">
+    <input type="checkbox" class="xm-object xm-checkbox__input form-control">
+    <span class="xm-checkbox__mark"></span>
+</label></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_1100" xm-visible="true" xm-enabled="true" xm-invalid="false" data-hint-id="id_1100" data-has-xm-object="true" data-xm-control-type="checkbox" data-linked-param="ST_188" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="width: 375px;">Ст. 188</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-checkbox" style=""><label class="xm-checkbox">
+    <input type="checkbox" class="xm-object xm-checkbox__input form-control">
+    <span class="xm-checkbox__mark"></span>
+</label></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_1101" xm-visible="true" xm-enabled="true" xm-invalid="false" data-hint-id="id_1101" data-has-xm-object="true" data-xm-control-type="checkbox" data-linked-param="PEREADRESOVKA" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="width: 375px;">Переадресовка</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-checkbox" style=""><label class="xm-checkbox">
+    <input type="checkbox" class="xm-object xm-checkbox__input form-control">
+    <span class="xm-checkbox__mark"></span>
+</label></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_1102" xm-visible="true" xm-enabled="true" xm-invalid="false" data-hint-id="id_1102" data-has-xm-object="true" data-xm-control-type="checkbox" data-linked-param="OTKAZ" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="width: 375px;">отказ</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-checkbox" style=""><label class="xm-checkbox">
+    <input type="checkbox" class="xm-object xm-checkbox__input form-control">
+    <span class="xm-checkbox__mark"></span>
+</label></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_1105" xm-visible="true" xm-enabled="true" xm-invalid="false" data-hint-id="id_1105" data-has-xm-object="true" data-xm-control-type="checkbox" data-linked-param="VOINSKIE_PEREVOZKI" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="width: 375px;">Воинские перевозки</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-checkbox" style=""><label class="xm-checkbox">
+    <input type="checkbox" class="xm-object xm-checkbox__input form-control">
+    <span class="xm-checkbox__mark"></span>
+</label></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_1103" xm-visible="true" xm-enabled="true" xm-invalid="false" data-hint-id="id_1103" data-has-xm-object="true" data-xm-control-type="checkbox" data-linked-param="DLYA_PRIKRYTIYA" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="width: 375px;">Для прикрытия</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-checkbox" style=""><label class="xm-checkbox">
+    <input type="checkbox" class="xm-object xm-checkbox__input form-control">
+    <span class="xm-checkbox__mark"></span>
+</label></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_1104" xm-visible="true" xm-enabled="true" xm-invalid="false" data-hint-id="id_1104" data-has-xm-object="true" data-xm-control-type="checkbox" data-linked-param="VAG_TEPLUSHKA" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="width: 375px;">Вагон-теплушка (расчет платы за польз. без штрафа)</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-checkbox" style=""><label class="xm-checkbox">
+    <input type="checkbox" class="xm-object xm-checkbox__input form-control">
+    <span class="xm-checkbox__mark"></span>
+</label></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_1106" xm-visible="true" xm-enabled="true" xm-invalid="false" data-hint-id="id_1106" data-has-xm-object="true" data-xm-control-type="checkbox" data-linked-param="EXPORT" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="width: 375px;">Экспорт</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-checkbox" style=""><label class="xm-checkbox">
+    <input type="checkbox" class="xm-object xm-checkbox__input form-control">
+    <span class="xm-checkbox__mark"></span>
+</label></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_1107" xm-visible="true" xm-enabled="true" xm-invalid="false" data-hint-id="id_1107" data-has-xm-object="true" data-xm-control-type="checkbox" data-linked-param="TAMOJ_DOSMOTR" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="width: 375px;">Таможенный досмотр</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-checkbox" style=""><label class="xm-checkbox">
+    <input type="checkbox" class="xm-object xm-checkbox__input form-control">
+    <span class="xm-checkbox__mark"></span>
+</label></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_1108" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_1108" data-has-xm-object="true" data-xm-control-type="checkbox" data-linked-param="VAG_SOBSTV_PRIVLECH" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="width: 375px;">ВАГОН СОБСТВЕННЫЙ ПРИВЛЕЧЕННЫЙ</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-checkbox" style=""><label class="xm-checkbox">
+    <input type="checkbox" class="xm-object xm-checkbox__input form-control">
+    <span class="xm-checkbox__mark"></span>
+</label></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_34" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_34" data-has-xm-object="true" data-xm-control-type="checkbox" data-linked-param="VAG_USE_RZD" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="width: 375px;">Вагон в пользовании РЖД по договору</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-checkbox" style=""><label class="xm-checkbox">
+    <input type="checkbox" class="xm-object xm-checkbox__input form-control">
+    <span class="xm-checkbox__mark"></span>
+</label></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_30" xm-visible="true" xm-enabled="true" xm-invalid="false" data-hint-id="id_30" data-has-xm-object="true" data-xm-control-type="checkbox" data-linked-param="VAG_USE_RZD" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="width: 375px;">Вагон привлечен по договору публичной оферты</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-checkbox" style=""><label class="xm-checkbox">
+    <input type="checkbox" class="xm-object xm-checkbox__input form-control">
+    <span class="xm-checkbox__mark"></span>
+</label></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_35" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_35" data-has-xm-object="true" data-xm-control-type="datepicker" data-linked-param="INV_DATE_PRIEM" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible" style="">Дата приема груза</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-labeled-object-control-datepicker-datetime" style=""><div class="xm-object input-group date">
+    <input type="text" class="xm-datepicker form-control js-datepicker">
+    <span class="input-group-addon">
+        <span class="glyphicon glyphicon-calendar"></span>
+    </span>
+</div></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_36" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_36" data-has-xm-object="true" data-xm-control-type="datepicker" data-linked-param="INV_DATE_RASKR" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible" style="">Дата выдачи накладной (раскредитование)</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-labeled-object-control-datepicker-datetime" style=""><div class="xm-object input-group date">
+    <input type="text" class="xm-datepicker form-control js-datepicker">
+    <span class="input-group-addon">
+        <span class="glyphicon glyphicon-calendar"></span>
+    </span>
+</div></div>
+</div></div>
+</div><div class="xm-object xm-container" style="" direction="vertical" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="vertical"><div class="xm-gui-labeled-object form-group" style="" xm-name="id_1109" xm-visible="true" xm-enabled="true" xm-invalid="false" data-hint-id="id_1109" data-has-xm-object="true" data-xm-control-type="checkbox" data-linked-param="AKT_UB_EXIST" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="width: 375px;">По факту задержки заверш. груз. опер. оформлялся Акт ГУ-23</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-checkbox" style=""><label class="xm-checkbox">
+    <input type="checkbox" class="xm-object xm-checkbox__input form-control">
+    <span class="xm-checkbox__mark"></span>
+</label></div>
+</div></div>
+</div><div class="xm-object xm-container xm-hidden-children" style="" direction="horizontal" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="horizontal"><div class="xm-gui-labeled-object form-group" style="" xm-name="id_1131" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_1131" data-has-xm-object="true" data-xm-control-type="edit" data-linked-param="GU23_UB_NUM" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="">Номер акта ГУ-23 по завершению грузовой операции</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 82px;"><input class="xm-object xm-edit form-control js-xm-edit" type="text" value="" maxlength="20"></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_1135" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_1135" data-has-xm-object="true" data-xm-control-type="edit" data-linked-param="P_DANNYM_ASULR_UB" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="">По данным АСУЛР</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 82px;"><input class="xm-object xm-edit form-control js-xm-edit xm-edit--simpleShow" type="text" value=""></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_1156" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_1156" data-has-xm-object="true" data-xm-control-type="numedit" data-linked-param="EASAPR_ID_UB" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible" style="">По данным ЕАСАПР:</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style=""><input class="xm-object xm-edit form-control" type="text" value="" xm-displayformat="string"></div>
+</div><button class="xm-object xm-button btn btn-secondary" style="" xm-caption="Открыть акт ЕАСАПР" xm-action-onclick="" xm-name="id_1158" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_1158" data-has-xm-object="true">
+    
+    <img class="xm-button-icon js-button-icon" style="" data-icon-name="">
+    <span class="btn-caption js-button-caption" style="">Открыть акт ЕАСАПР</span>
+</button></div>
+</div><div class="xm-object xm-container xm-hidden-children" style="" direction="vertical" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="vertical"><div class="xm-gui-labeled-object form-group" style="" xm-name="id_1132" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_1132" data-has-xm-object="true" data-xm-control-type="datepicker" data-linked-param="BEG_AKT_UB" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible" style="">Дата и время начала простоя по акту</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-labeled-object-control-datepicker-datetime" style=""><div class="xm-object input-group date">
+    <input type="text" class="xm-datepicker form-control js-datepicker">
+    <span class="input-group-addon">
+        <span class="glyphicon glyphicon-calendar"></span>
+    </span>
+</div></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_1133" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_1133" data-has-xm-object="true" data-xm-control-type="datepicker" data-linked-param="END_AKT_UB" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible" style="">Дата и время окончания простоя по акту</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-labeled-object-control-datepicker-datetime" style=""><div class="xm-object input-group date">
+    <input type="text" class="xm-datepicker form-control js-datepicker">
+    <span class="input-group-addon">
+        <span class="glyphicon glyphicon-calendar"></span>
+    </span>
+</div></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_1134" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_1134" data-has-xm-object="true" data-xm-control-type="timeedit" data-linked-param="GU23_TIME_UB_M" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible" style="">Время по акту на завершение грузовой операции</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-labeled-object-control-timepicker" style=""><input type="text" class="form-control timeedit is-timeEntry" ondragstart="return false;" ondrop="return false;"></div>
+</div></div>
+</div><div class="xm-object xm-container" style="" direction="vertical" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="vertical"><div class="xm-gui-labeled-object form-group" style="" xm-name="id_1110" xm-visible="true" xm-enabled="true" xm-invalid="false" data-hint-id="id_1110" data-has-xm-object="true" data-xm-control-type="checkbox" data-linked-param="AKT_EXIST" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="width: 375px;">По факту задержки подачи оформлялся Акт ГУ-23</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-checkbox" style=""><label class="xm-checkbox">
+    <input type="checkbox" class="xm-object xm-checkbox__input form-control">
+    <span class="xm-checkbox__mark"></span>
+</label></div>
+</div></div>
+</div><div class="xm-object xm-container xm-hidden-children" style="" direction="horizontal" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="horizontal"><div class="xm-gui-labeled-object form-group" style="" xm-name="id_1111" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_1111" data-has-xm-object="true" data-xm-control-type="edit" data-linked-param="GU23_NUM" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="">Номер акта ГУ-23 на задержку подачи</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 82px;"><input class="xm-object xm-edit form-control js-xm-edit" type="text" value="" maxlength="20"></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_1125" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_1125" data-has-xm-object="true" data-xm-control-type="edit" data-linked-param="P_DANNYM_ASULR" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="">По данным АСУЛР</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 82px;"><input class="xm-object xm-edit form-control js-xm-edit xm-edit--simpleShow" type="text" value=""></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_518" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_518" data-has-xm-object="true" data-xm-control-type="numedit" data-linked-param="EASAPR_ID" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible" style="">По данным ЕАСАПР:</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style=""><input class="xm-object xm-edit form-control" type="text" value="" xm-displayformat="string"></div>
+</div><button class="xm-object xm-button btn btn-secondary" style="" xm-caption="Открыть акт ЕАСАПР" xm-action-onclick="" xm-name="id_519" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_519" data-has-xm-object="true">
+    
+    <img class="xm-button-icon js-button-icon" style="" data-icon-name="">
+    <span class="btn-caption js-button-caption" style="">Открыть акт ЕАСАПР</span>
+</button></div>
+</div><div class="xm-object xm-container xm-hidden-children" style="" direction="vertical" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="vertical"><div class="xm-gui-labeled-object form-group" style="" xm-name="id_1113" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_1113" data-has-xm-object="true" data-xm-control-type="datepicker" data-linked-param="BEG_AKT" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible" style="">Время начала простоя по акту ГУ-23 на задержку подачи</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-labeled-object-control-datepicker-datetime" style=""><div class="xm-object input-group date">
+    <input type="text" class="xm-datepicker form-control js-datepicker">
+    <span class="input-group-addon">
+        <span class="glyphicon glyphicon-calendar"></span>
+    </span>
+</div></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_1114" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_1114" data-has-xm-object="true" data-xm-control-type="datepicker" data-linked-param="END_AKT" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible" style="">Время окончания простоя по акту ГУ-23 на задержку подачи</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-labeled-object-control-datepicker-datetime" style=""><div class="xm-object input-group date">
+    <input type="text" class="xm-datepicker form-control js-datepicker">
+    <span class="input-group-addon">
+        <span class="glyphicon glyphicon-calendar"></span>
+    </span>
+</div></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_1119" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_1119" data-has-xm-object="true" data-xm-control-type="timeedit" data-linked-param="GU23_TIME_M" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible" style="">Время по акту задержки подачи</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-labeled-object-control-timepicker" style=""><input type="text" class="form-control timeedit is-timeEntry" ondragstart="return false;" ondrop="return false;"></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_1149" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_1149" data-has-xm-object="true" data-xm-control-type="numedit" data-linked-param="GU23_KRATN" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="">Кратность для акта ГУ-23</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 30px;"><input class="xm-object xm-edit form-control" type="text" value="" xm-displayformat="number"></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_131" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_131" data-has-xm-object="true" data-xm-control-type="datepicker" data-linked-param="KRATN_UVED" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible" style="">Дата уведомления о кратности</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-labeled-object-control-datepicker-date" style=""><div class="xm-object input-group date">
+    <input type="text" class="xm-datepicker form-control js-datepicker">
+    <span class="input-group-addon">
+        <span class="glyphicon glyphicon-calendar"></span>
+    </span>
+</div></div>
+</div></div>
+</div><div class="xm-object xm-container xm-hidden-children" style="" direction="horizontal" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="horizontal"><div class="xm-gui-labeled-object form-group" style="" xm-name="id_18" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_18" data-has-xm-object="true" data-xm-control-type="numedit" data-linked-param="GU23_SUM" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="">Сумма по акту задержки</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 82px;"><input class="xm-object xm-edit form-control" type="text" value="" xm-displayformat="currency"></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_190" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_190" data-has-xm-object="true" data-xm-control-type="numedit" data-linked-param="GU23_SUMMAV" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="">Сумма задержки по акту в тенге</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 82px;"><input class="xm-object xm-edit form-control" type="text" value="" xm-displayformat="currency"></div>
+</div><div class="xm-gui-labeled-object form-group empty-label" style="" xm-name="id_1154" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_1154" data-has-xm-object="true" data-xm-control-type="numedit" data-linked-param="GU23_SUM_CODE" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-align-left" style=""></label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 82px;"><input class="xm-object xm-edit form-control" type="text" value="" xm-displayformat="number"></div>
+</div><div class="xm-gui-labeled-object form-group empty-label" style="" xm-name="id_1172" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_1172" data-has-xm-object="true" data-xm-control-type="quicksearch" data-linked-param="ID_STAT_GU" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-align-left" style=""></label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 400px;"><div class="quicksearch input-group search">
+    <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input class="form-control js-quicksearch tt-input" placeholder="Поиск" typeahead-append-to-body="true" type="text" data-fnm-ignore="" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-108"></div></div></span>
+    <span class="input-group-addon quicksearch-button js-quicksearch-button" tabindex="-1">
+        <span class="glyphicon glyphicon-search"></span>
+    </span>
+</div></div>
+</div></div>
+</div><div class="xm-object xm-container" style="" direction="horizontal" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="horizontal"><div class="xm-gui-labeled-object form-group" style="" xm-name="id_1217" xm-visible="true" xm-enabled="true" xm-invalid="false" data-hint-id="id_1217" data-has-xm-object="true" data-xm-control-type="numedit" data-linked-param="PLAT_SUM" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="">Сумма платы</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 82px;"><input class="xm-object xm-edit form-control" type="text" value="" xm-displayformat="currency"></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_191" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_191" data-has-xm-object="true" data-xm-control-type="numedit" data-linked-param="PLAT_SUMMAV" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="">Сумма платы в тенге</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 82px;"><input class="xm-object xm-edit form-control" type="text" value="" xm-displayformat="currency"></div>
+</div><div class="xm-gui-labeled-object form-group empty-label" style="" xm-name="id_1218" xm-visible="true" xm-enabled="false" xm-invalid="false" data-hint-id="id_1218" data-has-xm-object="true" data-xm-control-type="numedit" data-linked-param="PLAT_SUM_CODE" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-align-left" style=""></label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 82px;"><input class="xm-object xm-edit form-control" type="text" value="" xm-displayformat="number" disabled="disabled"></div>
+</div><div class="xm-gui-labeled-object form-group empty-label" style="" xm-name="id_1219" xm-visible="true" xm-enabled="true" xm-invalid="false" data-hint-id="id_1219" title="Плата за пользование вагонами, принадл. перевозчику" data-has-xm-object="true" data-xm-control-type="quicksearch" data-linked-param="ID_STAT_USE" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-align-left" style=""></label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 400px;"><div class="quicksearch input-group search">
+    <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input class="form-control js-quicksearch tt-input" typeahead-append-to-body="true" type="text" data-fnm-ignore="" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre;"></pre></span>
+    <span class="input-group-addon quicksearch-button js-quicksearch-button" tabindex="-1">
+        <span class="glyphicon glyphicon-search"></span>
+    </span>
+</div></div>
+</div><button class="xm-object xm-button btn btn-secondary" style="" xm-caption="Расчет" xm-action-onclick="" xm-name="id_111" xm-visible="true" xm-enabled="true" xm-invalid="false" data-hint-id="id_111" data-has-xm-object="true">
+    
+    <img class="xm-button-icon js-button-icon" style="" data-icon-name="">
+    <span class="btn-caption js-button-caption" style="">Расчет</span>
+</button></div>
+</div><div class="xm-object xm-container" style="" direction="horizontal" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="horizontal"><div class="xm-gui-labeled-object form-group" style="" xm-name="id_1220" xm-visible="true" xm-enabled="true" xm-invalid="false" data-hint-id="id_1220" data-has-xm-object="true" data-xm-control-type="numedit" data-linked-param="SHTRAF_SUM" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="">Сумма штрафа</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 82px;"><input class="xm-object xm-edit form-control" type="text" value="" xm-displayformat="currency"></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_193" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_193" data-has-xm-object="true" data-xm-control-type="numedit" data-linked-param="SHTRAF_SUMMAV" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="">Сумма штрафа в тенге</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 82px;"><input class="xm-object xm-edit form-control" type="text" value="" xm-displayformat="currency"></div>
+</div><div class="xm-gui-labeled-object form-group empty-label" style="" xm-name="id_1221" xm-visible="true" xm-enabled="false" xm-invalid="false" data-hint-id="id_1221" data-has-xm-object="true" data-xm-control-type="numedit" data-linked-param="SHTRAF_SUM_CODE" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-align-left" style=""></label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 82px;"><input class="xm-object xm-edit form-control" type="text" value="" xm-displayformat="number" disabled="disabled"></div>
+</div><div class="xm-gui-labeled-object form-group empty-label" style="" xm-name="id_1222" xm-visible="true" xm-enabled="true" xm-invalid="false" data-hint-id="id_1222" title="За задержку вагонов ст.62" data-has-xm-object="true" data-xm-control-type="quicksearch" data-linked-param="ID_STAT_SHTRAF" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-align-left" style=""></label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 400px;"><div class="quicksearch input-group search">
+    <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input class="form-control js-quicksearch tt-input" typeahead-append-to-body="true" type="text" data-fnm-ignore="" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre;"></pre></span>
+    <span class="input-group-addon quicksearch-button js-quicksearch-button" tabindex="-1">
+        <span class="glyphicon glyphicon-search"></span>
+    </span>
+</div></div>
+</div></div>
+</div><div class="xm-object xm-container" style="" direction="vertical" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="vertical"><div class="xm-gui-labeled-object form-group" style="" xm-name="id_1237" xm-visible="true" xm-enabled="false" xm-invalid="false" data-hint-id="id_1237" data-has-xm-object="true" data-xm-control-type="numedit" data-linked-param="SHTRAF_SUM_URSH" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="width: 300px;">сумма штрафа, переданная в уведомление</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 82px;"><input class="xm-object xm-edit form-control" type="text" value="" xm-displayformat="number" disabled="disabled"></div>
+</div></div>
+</div><div class="xm-object xm-container" style="" direction="horizontal" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="horizontal"><div class="xm-gui-labeled-object form-group" style="" xm-name="id_1224" xm-visible="true" xm-enabled="true" xm-invalid="false" data-hint-id="id_1224" data-has-xm-object="true" data-xm-control-type="numedit" data-linked-param="LOCATE_SUM" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="">Сумма платы за нахождение</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 82px;"><input class="xm-object xm-edit form-control" type="text" value="" xm-displayformat="currency"></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_194" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_194" data-has-xm-object="true" data-xm-control-type="numedit" data-linked-param="LOCATE_SUMMAV" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="">Сумма платы за нахождение в тенге</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 82px;"><input class="xm-object xm-edit form-control" type="text" value="" xm-displayformat="currency"></div>
+</div><div class="xm-gui-labeled-object form-group empty-label" style="" xm-name="id_1225" xm-visible="true" xm-enabled="false" xm-invalid="false" data-hint-id="id_1225" data-has-xm-object="true" data-xm-control-type="numedit" data-linked-param="LOCATE_SUM_CODE" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-align-left" style=""></label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 82px;"><input class="xm-object xm-edit form-control" type="text" value="" xm-displayformat="number" disabled="disabled"></div>
+</div><div class="xm-gui-labeled-object form-group empty-label" style="" xm-name="id_1226" xm-visible="true" xm-enabled="true" xm-invalid="false" data-hint-id="id_1226" title="Плата за нахождение на ж.д. путях общего пользования  груженых и порожних вагонов в перевозоч. процессе (кроме случая задержки в пути следования)" data-has-xm-object="true" data-xm-control-type="quicksearch" data-linked-param="ID_STAT_LOCATE" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-align-left" style=""></label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 400px;"><div class="quicksearch input-group search">
+    <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input class="form-control js-quicksearch tt-input" typeahead-append-to-body="true" type="text" data-fnm-ignore="" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre;"></pre></span>
+    <span class="input-group-addon quicksearch-button js-quicksearch-button" tabindex="-1">
+        <span class="glyphicon glyphicon-search"></span>
+    </span>
+</div></div>
+</div></div>
+</div><div class="inline-message" data-action-id="id_9" style="">
+        <span class="inline-message__text js-caption">начисляется на путях общего пользования с 07.06.2015 согласно  приказу №127-т/1 ФСТ России от 29 апреля 2015 года</span>
+    </div><div class="xm-object xm-container" style="" direction="vertical" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="vertical"><div class="xm-gui-labeled-object form-group" style="flex-shrink: 1; width: 100%;" xm-name="id_681" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_681" data-has-xm-object="true" data-xm-control-type="memo" data-linked-param="EVAL_DESCR" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="">Автоматизированный расчет</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="min-width: auto; flex-grow: 1; width: auto;"><textarea class="xm-object xm-memo form-control" rows="7"></textarea></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_1250" xm-visible="true" xm-enabled="false" xm-invalid="false" data-hint-id="id_1250" data-has-xm-object="true" data-xm-control-type="numedit" data-linked-param="VAG_ALL_SUM" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="">Итого по вагону</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 116px;"><input class="xm-object xm-edit form-control" type="text" value="" xm-displayformat="currency" disabled="disabled"></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_201" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_201" data-has-xm-object="true" data-xm-control-type="numedit" data-linked-param="VAG_ALL_SUMV" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="">Итого по вагону в тенге</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 116px;"><input class="xm-object xm-edit form-control" type="text" value="" xm-displayformat="currency"></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_1251" xm-visible="true" xm-enabled="true" xm-invalid="false" data-hint-id="id_1251" data-has-xm-object="true" data-xm-control-type="memo" data-linked-param="PRIM" data-is-required-param="false" data-sub="VPU_WAG">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="">Примечание</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="min-width: auto; flex-grow: initial; width: 400px;"><textarea class="xm-object xm-memo form-control" maxlength="1000" rows="4"></textarea></div>
+</div></div>
+</div></div>
+</div></div>
+</div></div>
+
+            <div class="dialog__footer js-dialog-footer">
+                <!-- Кнопки -->
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

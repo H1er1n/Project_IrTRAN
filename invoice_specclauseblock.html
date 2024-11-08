@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html><head>
+    <title>ЭТРАН</title>
+
+    <!-- Браузер, не зажёвывай меня в кэш! -->
+    <meta http-equiv="cache-control" content="max-age=0">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT">
+    <meta http-equiv="pragma" content="no-cache">
+
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width">-->
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+<link href="./files/preloader.05e9578ddfc67dd3594c.css" rel="stylesheet"><link href="./files/main.5995fb6faa064b522a0a.css" rel="stylesheet"><link rel="stylesheet" type="text/css" href="./files/vendors.b640cc19cb0bc4cee48d.css"><style>.picker_wrapper.no_alpha .picker_alpha{display:none}.picker_wrapper.no_editor .picker_editor{position:absolute;z-index:-1;opacity:0}.picker_wrapper.no_cancel .picker_cancel{display:none}.layout_default.picker_wrapper{display:flex;flex-flow:row wrap;justify-content:space-between;align-items:stretch;font-size:10px;width:25em;padding:.5em}.layout_default.picker_wrapper input,.layout_default.picker_wrapper button{font-size:1rem}.layout_default.picker_wrapper>*{margin:.5em}.layout_default.picker_wrapper::before{content:"";display:block;width:100%;height:0;order:1}.layout_default .picker_slider,.layout_default .picker_selector{padding:1em}.layout_default .picker_hue{width:100%}.layout_default .picker_sl{flex:1 1 auto}.layout_default .picker_sl::before{content:"";display:block;padding-bottom:100%}.layout_default .picker_editor{order:1;width:6.5rem}.layout_default .picker_editor input{width:100%;height:100%}.layout_default .picker_sample{order:1;flex:1 1 auto}.layout_default .picker_done,.layout_default .picker_cancel{order:1}.picker_wrapper{box-sizing:border-box;background:#f2f2f2;box-shadow:0 0 0 1px silver;cursor:default;font-family:sans-serif;color:#444;pointer-events:auto}.picker_wrapper:focus{outline:none}.picker_wrapper button,.picker_wrapper input{box-sizing:border-box;border:none;box-shadow:0 0 0 1px silver;outline:none}.picker_wrapper button:focus,.picker_wrapper button:active,.picker_wrapper input:focus,.picker_wrapper input:active{box-shadow:0 0 2px 1px #1e90ff}.picker_wrapper button{padding:.4em .6em;cursor:pointer;background-color:#f5f5f5;background-image:linear-gradient(0deg, gainsboro, transparent)}.picker_wrapper button:active{background-image:linear-gradient(0deg, transparent, gainsboro)}.picker_wrapper button:hover{background-color:#fff}.picker_selector{position:absolute;z-index:1;display:block;-webkit-transform:translate(-50%, -50%);transform:translate(-50%, -50%);border:2px solid #fff;border-radius:100%;box-shadow:0 0 3px 1px #67b9ff;background:currentColor;cursor:pointer}.picker_slider .picker_selector{border-radius:2px}.picker_hue{position:relative;background-image:linear-gradient(90deg, red, yellow, lime, cyan, blue, magenta, red);box-shadow:0 0 0 1px silver}.picker_sl{position:relative;box-shadow:0 0 0 1px silver;background-image:linear-gradient(180deg, white, rgba(255, 255, 255, 0) 50%),linear-gradient(0deg, black, rgba(0, 0, 0, 0) 50%),linear-gradient(90deg, #808080, rgba(128, 128, 128, 0))}.picker_alpha,.picker_sample{position:relative;background:linear-gradient(45deg, lightgrey 25%, transparent 25%, transparent 75%, lightgrey 75%) 0 0/2em 2em,linear-gradient(45deg, lightgrey 25%, white 25%, white 75%, lightgrey 75%) 1em 1em/2em 2em;box-shadow:0 0 0 1px silver}.picker_alpha .picker_selector,.picker_sample .picker_selector{background:none}.picker_editor input{font-family:monospace;padding:.2em .4em}.picker_sample::before{content:"";position:absolute;display:block;width:100%;height:100%;background:currentColor}.picker_arrow{position:absolute;z-index:-1}.picker_wrapper.popup{position:absolute;z-index:2;margin:1.5em}.picker_wrapper.popup,.picker_wrapper.popup .picker_arrow::before,.picker_wrapper.popup .picker_arrow::after{background:#f2f2f2;box-shadow:0 0 10px 1px rgba(0,0,0,.4)}.picker_wrapper.popup .picker_arrow{width:3em;height:3em;margin:0}.picker_wrapper.popup .picker_arrow::before,.picker_wrapper.popup .picker_arrow::after{content:"";display:block;position:absolute;top:0;left:0;z-index:-99}.picker_wrapper.popup .picker_arrow::before{width:100%;height:100%;-webkit-transform:skew(45deg);transform:skew(45deg);-webkit-transform-origin:0 100%;transform-origin:0 100%}.picker_wrapper.popup .picker_arrow::after{width:150%;height:150%;box-shadow:none}.popup.popup_top{bottom:100%;left:0}.popup.popup_top .picker_arrow{bottom:0;left:0;-webkit-transform:rotate(-90deg);transform:rotate(-90deg)}.popup.popup_bottom{top:100%;left:0}.popup.popup_bottom .picker_arrow{top:0;left:0;-webkit-transform:rotate(90deg) scale(1, -1);transform:rotate(90deg) scale(1, -1)}.popup.popup_left{top:0;right:100%}.popup.popup_left .picker_arrow{top:0;right:0;-webkit-transform:scale(-1, 1);transform:scale(-1, 1)}.popup.popup_right{top:0;left:100%}.popup.popup_right .picker_arrow{top:0;left:0}</style><style>body {--auth-window-bg-color:#a3bfff;--auth-window-border-color:transparent;--auth-window-btn-bg-color:#3f6cb7;--auth-window-btn-color:#fff;--auth-window-header-bg-color:#a3bfff;--auth-window-header-color:#fff;--auth-window-input-bg-color:#fff;--auth-window-input-border-color:transparent;--auth-window-input-color:#000;--auth-window-input-focus-border-color:#2571cb;--auth-window-logo-height:0px;--auth-window-logo-width:0px;--button-active-bg-color:#245693;--button-active-color:#ffffff;--button-bg-color:#7da5f0;--button-disabled-bg-color:#efefef;--button-disabled-color:#999999;--button-font-color:#ffffff;--button-hover-bg-color:#5086d6;--button-hover-color:#ffffff;--button-primary-bg-color:#3e6cb4;--button-primary-color:#ffffff;--button-primary-focus-bg-color:#154175;--button-primary-focus-color:#ffffff;--button-primary-hover-bg-color:#2a5696;--button-primary-hover-color:#ffffff;--button-secondary-bg-color:#7da5f0;--button-secondary-color:#ffffff;--button-secondary-focus-bg-color:#245693;--button-secondary-focus-color:#ffffff;--button-secondary-hover-bg-color:#5086d6;--button-secondary-hover-color:#ffffff;--color-base:#7da5f0;--dialog-close-bg-color:transparent;--dialog-close-bg-color-hover:red;--dialog-close-cross-color:#fff;--dialog-close-height:28px;--dialog-close-width:48px;--dialog-header-bg-color:#7da5f0;--dialog-main-bg-color:#fff;--dialog-title-color:#fff;--doc-list-details-header-bg-color:#e8e8e8;--doc-list-details-input-active-bg-color:#ffffff;--doc-list-details-input-active-color:#ed5114;--doc-list-details-input-bg-color:#c0c0c0;--doc-list-details-input-color:#406eb0;--doc-list-details-input-focus-bg-color:#ffffff;--doc-list-details-input-focus-color:#406eb0;--doc-list-editor-add-group-btn-color:#454545;--doc-list-editor-add-group-btn-hover-color:#171717;--doc-list-editor-borders-color:#c1c1c1;--doc-list-editor-focus-line-color:#b8b8b8;--doc-list-editor-header-input-bg-color:transparent;--doc-list-editor-header-input-focus-bg-color:#fff;--doc-list-editor-header-input-focus-color:#454545;--doc-list-editor-header-input-hover-bg-color:transparent;--doc-list-editor-header-input-hover-color:#fff;--doc-list-editor-title-color:#fff;--dop-color:#3e6cb6;--dropdown-active-bg-color:#3e6cb6;--dropdown-active-color:#fff;--dropdown-bg-color:#fff;--dropdown-font-color:#000;--dropdown-hover-bg-color:#7ea6f0;--dropdown-hover-color:#fff;--element-bg-color:#e3e2ff;--element-border-color:#c1c1c1;--element-disabled-bg-color:#ffffde;--element-disabled-opacity:1;--element-focus-bg-color:#e3e2ff;--element-focus-border-color:#2571cb;--element-font-color:#000;--element-hover-bg-color:#2571cb;--element-hover-font-color:#fff;--element-selected-bg-color:#817cff;--element-selected-font-color:#fff;--grid-active-column-bg-color:#154175;--grid-active-column-font-color:#fff;--grid-active-row-bg-color:#2165b6;--grid-active-row-font-color:#fff;--grid-cell-border-color:#eceeef;--grid-ctx-menu-bg-color:#e8e8e8;--grid-ctx-menu-border-color:#c1c1c1;--grid-ctx-menu-color:#595959;--grid-font-color:#000;--grid-group-active-row-bg-color:#6493cc;--grid-group-bg-color:#c0c0c0;--grid-group-summary-bg-color:#2165b6;--grid-header-cell-border-color:#dbdbdb;--grid-marked-bg-color:#7da5f0;--grid-row-bg-color:#fff;--grid-row-hover-bg-color:rgba(0,0,0,.075);--grid-summary-bg-color:#3e6cb6;--grid-summary-cell-bg-color:#c6daff;--grid-summary-color:#fff;--grid-summary-hover-bg-color:#4c79c2;--hint-button-font-color:#1b4572;--hint-icon-color:#7da5f0;--hint-main-color:#1b4572;--input-bottom-padding:1px;--input-top-padding:1px;--lang-toggle-bg-color:transparent;--lang-toggle-color:#fff;--main-header-bg-color:#7da5f0;--main-header-color:#fff;--main-header-height:44px;--main-header-logo-height:30px;--main-header-logo-width:87px;--message-basic-color:#22b14c;--message-error-color:#a52a2a;--message-font-color:#ffffff;--message-warning-color:#d79e36;--scroll-color:#f2f2f2;--scroll-slider-color:#666;--scroll-thin:14px;--shell-menu-data-bg-color:#fff;--shell-menu-group-color:#3e6cb6;--shell-menu-item-active-bg-color:#4f85eb;--shell-menu-item-bg-color:#efefef;--shell-menu-item-color:#545556;--shell-menu-item-hover-bg-color:#4f85eb;--shell-menu-item-hover-color:#fff;--spinner-color:#5e6672;--tabs-border-color:#c1c1c1;--tree-row-bg-color:#fff;--tree-row-color:#333;--tree-row-focus-bg-color:rgba(0,0,0,0.075);--tree-row-hover-bg-color:rgba(0,0,0,0.075);--xm-container-label-bg-color:#fff;}</style></head>
+<body>
+
+<div id="modalSpecial" class="dialog xm-windows-dialog xm-window-name-SPECCLAUSEBLOCK_wnd xm-window-for-document js-dialog dialog-active">
+    <!-- Диалог -->
+    <div class="dialog-main-area js-dialog-window dialog-has-subtitle" style="max-width: 50%">
+
+        <div class="dialog-top js-dialog-header">
+            <!-- Заголовок диалога -->
+            <div class="dialog-title-block js-dialog-title-block">
+                <div class="dialog-title js-dialog-title" title="Специальные отметки">Специальные отметки</div>
+                <div class="dialog-subtitle"><span class="dialog-subtitle__text js-dialog-subtitle" aria-expanded="false">Поле "Отметка" обязательно к заполнению</span></div>
+            </div>
+            <!-- Кнопка закрытия -->
+            <div onclick="closemodalSpecial()" class="dialog-close js-dialog-close"></div>
+        </div>
+
+        <div class="dialog__body js-dialog-body">
+            <!-- Данные диалога -->
+            <div class="dialog-data js-dialog-data"><div class="xm-object xm-container xm-window" style="" direction="vertical" xm-name="SPECCLAUSEBLOCK_wnd" xm-visible="true" xm-enabled="true" xm-caption="Специальные отметки" xm-invalid="false" data-hint-id="SPECCLAUSEBLOCK_wnd" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="vertical"><div class="xm-object xm-container fixed-doc-header" style="" direction="vertical" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data fixed-doc-header__data" style="min-width: 950px;" direction="vertical"><div class="xm-object xm-toolbar btn-toolbar xm-doc-second-toolbar" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-toolbar-data js-toolbar-data xm-doc-toolbar" style="width: 950px;"><div class="btn-group xm-sub-row-control-group" role="group" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true" style=""><button class="xm-object xm-button btn btn-secondary" style="" xm-caption="Применить" xm-action-onclick="" xm-visible="true" xm-enabled="false" xm-invalid="false" data-hint-id="xm-sub-apply" data-has-xm-object="true" disabled="disabled" data-grid-name="SPECCLAUSEBLOCK">
+    
+    <img class="xm-button-icon js-button-icon" style="" data-icon-name="">
+    <span class="btn-caption js-button-caption" style="">Применить</span>
+</button><button class="xm-object xm-button btn btn-secondary" style="" xm-caption="Отменить" xm-action-onclick="" xm-visible="true" xm-enabled="true" xm-invalid="false" data-hint-id="xm-sub-cancel" data-has-xm-object="true" data-grid-name="SPECCLAUSEBLOCK">
+    
+    <img class="xm-button-icon js-button-icon" style="" data-icon-name="">
+    <span class="btn-caption js-button-caption" style="">Отменить</span>
+</button></div><div class="btn-group xm-btn-group-operations xm-btn-group-operations-toolbar" role="group" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true" style=""><button class="xm-object xm-button btn btn-secondary" style="" xm-caption="Предыдущий" xm-action-onclick="" xm-visible="true" xm-enabled="false" xm-invalid="false" data-hint-id="xm-sub-prev-row" disabled="disabled" data-has-xm-object="true">
+    
+    <img class="xm-button-icon js-button-icon" style="" data-icon-name="">
+    <span class="btn-caption js-button-caption" style="">Предыдущий</span>
+</button><button class="xm-object xm-button btn btn-secondary" style="" xm-caption="Следующий" xm-action-onclick="" xm-visible="true" xm-enabled="false" xm-invalid="false" data-hint-id="xm-sub-next-row" disabled="disabled" data-has-xm-object="true">
+    
+    <img class="xm-button-icon js-button-icon" style="" data-icon-name="">
+    <span class="btn-caption js-button-caption" style="">Следующий</span>
+</button><button class="xm-object xm-button btn btn-secondary" style="" xm-caption="Добавить" xm-action-onclick="" xm-visible="true" xm-enabled="false" xm-invalid="false" data-hint-id="xm-sub-add" disabled="disabled" data-has-xm-object="true">
+    
+    <img class="xm-button-icon js-button-icon" style="" data-icon-name="">
+    <span class="btn-caption js-button-caption" style="">Добавить</span>
+</button><button class="xm-object xm-button btn btn-secondary" style="" xm-caption="Копировать" xm-action-onclick="" xm-visible="true" xm-enabled="false" xm-invalid="false" data-hint-id="xm-sub-copy" disabled="disabled" data-has-xm-object="true">
+    
+    <img class="xm-button-icon js-button-icon" style="" data-icon-name="">
+    <span class="btn-caption js-button-caption" style="">Копировать</span>
+</button></div></div>
+</div></div>
+</div><div class="xm-object xm-container" style="" direction="vertical" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="vertical"><div class="xm-object xm-container" style="" direction="horizontal" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="horizontal"><div class="xm-gui-labeled-object form-group" style="" xm-name="id_151" xm-visible="true" xm-enabled="true" xm-invalid="true" data-hint-id="id_151" data-has-xm-object="true" data-xm-control-type="quicksearch" data-linked-param="PSPC_TRANSPCLAUSE_ID" data-is-required-param="true" data-sub="SPECCLAUSEBLOCK">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="">Отметка</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 800px;"><div class="quicksearch input-group search">
+    <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input class="form-control js-quicksearch tt-input" placeholder="Поиск" typeahead-append-to-body="true" type="text" data-fnm-ignore="" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre;"></pre></span>
+    <span class="input-group-addon quicksearch-button js-quicksearch-button" tabindex="-1">
+        <span class="glyphicon glyphicon-search"></span>
+    </span>
+</div></div>
+</div></div>
+</div><div class="xm-object xm-container xm-hidden-children" style="width: 100%; min-width: auto;" direction="vertical" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="vertical"><div class="xm-object xm-container xm-hidden-children" style="" direction="horizontal" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="horizontal"><div class="xm-gui-labeled-object form-group" style="" xm-name="id_153" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_153" data-has-xm-object="true" data-xm-control-type="quicksearch" data-linked-param="PSPC_FREIGHT_ID" data-is-required-param="false" data-sub="SPECCLAUSEBLOCK">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="">Груз</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 400px;"><div class="quicksearch input-group search">
+    <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input class="form-control js-quicksearch tt-input" placeholder="Поиск" typeahead-append-to-body="true" type="text" data-fnm-ignore="" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-167"></div></div></span>
+    <span class="input-group-addon quicksearch-button js-quicksearch-button" tabindex="-1">
+        <span class="glyphicon glyphicon-search"></span>
+    </span>
+</div></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_152" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_152" data-has-xm-object="true" data-xm-control-type="edit" data-linked-param="PSPC_FREIGHT_CODE" data-is-required-param="false" data-sub="SPECCLAUSEBLOCK">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible" style="">Код груза</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style=""><input class="xm-object xm-edit form-control js-xm-edit xm-edit--simpleShow" type="text" value="" maxlength="20"></div>
+</div></div>
+</div><div class="xm-object xm-container xm-hidden-children" style="" direction="vertical" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="vertical"><div class="xm-gui-labeled-object form-group" style="" xm-name="id_211" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_211" data-has-xm-object="true" data-xm-control-type="quicksearch" data-linked-param="PSPC_PAYERCONTRACT_ID" data-is-required-param="false" data-sub="SPECCLAUSEBLOCK">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible" style="">Договор на отстой</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style=""><div class="quicksearch input-group search">
+    <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input class="form-control js-quicksearch tt-input" placeholder="Поиск" typeahead-append-to-body="true" type="text" data-fnm-ignore="" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-168"></div></div></span>
+    <span class="input-group-addon quicksearch-button js-quicksearch-button" tabindex="-1">
+        <span class="glyphicon glyphicon-search"></span>
+    </span>
+</div></div>
+</div></div>
+</div><div class="xm-object xm-container xm-hidden-children" style="" direction="vertical" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="vertical"><div class="xm-object xm-container xm-hidden-children" style="" direction="horizontal" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="horizontal"><div class="xm-gui-labeled-object form-group" style="" xm-name="id_154" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_154" data-has-xm-object="true" data-xm-control-type="quicksearch" data-linked-param="PSPC_DEPCLAIM_ID" data-is-required-param="false" data-sub="SPECCLAUSEBLOCK">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible" style="">Заявка на отстой</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style=""><div class="quicksearch input-group search">
+    <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input class="form-control js-quicksearch tt-input" placeholder="Поиск" typeahead-append-to-body="true" type="text" data-fnm-ignore="" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-169"></div></div></span>
+    <span class="input-group-addon quicksearch-button js-quicksearch-button" tabindex="-1">
+        <span class="glyphicon glyphicon-search"></span>
+    </span>
+</div></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_210" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_210" data-has-xm-object="true" data-xm-control-type="numedit" data-linked-param="PSPC_DEPCLAIM_NOMOTP" data-is-required-param="false" data-sub="SPECCLAUSEBLOCK">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible" style="">Номер отправки</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style=""><input class="xm-object xm-edit form-control" type="text" value="" xm-displayformat="number"></div>
+</div></div>
+</div></div>
+</div><div class="xm-object xm-container xm-hidden-children" style="" direction="vertical" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="vertical"><div class="xm-gui-labeled-object form-group" style="" xm-name="id_2106" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_2106" data-has-xm-object="true" data-xm-control-type="quicksearch" data-linked-param="PSPC_CHANGESTATIONID" data-is-required-param="false" data-sub="SPECCLAUSEBLOCK">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="">Станция смены локомотива</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 400px;"><div class="quicksearch input-group search">
+    <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input class="form-control js-quicksearch tt-input" placeholder="Поиск" typeahead-append-to-body="true" type="text" data-fnm-ignore="" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-170"></div></div></span>
+    <span class="input-group-addon quicksearch-button js-quicksearch-button" tabindex="-1">
+        <span class="glyphicon glyphicon-search"></span>
+    </span>
+</div></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_3773" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_3773" data-has-xm-object="true" data-xm-control-type="quicksearch" data-linked-param="PSPC_STATIONRELOADID" data-is-required-param="false" data-sub="SPECCLAUSEBLOCK">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="">Станция перегруза</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 400px;"><div class="quicksearch input-group search">
+    <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input class="form-control js-quicksearch tt-input" placeholder="Поиск" typeahead-append-to-body="true" type="text" data-fnm-ignore="" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-171"></div></div></span>
+    <span class="input-group-addon quicksearch-button js-quicksearch-button" tabindex="-1">
+        <span class="glyphicon glyphicon-search"></span>
+    </span>
+</div></div>
+</div></div>
+</div><div class="xm-object xm-container xm-hidden-children" style="" direction="vertical" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="vertical"><div class="xm-gui-labeled-object form-group" style="" xm-name="id_2107" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_2107" data-has-xm-object="true" data-xm-control-type="quicksearch" data-linked-param="PSPC_RENTPAYERCONTRACT_ID" data-is-required-param="false" data-sub="SPECCLAUSEBLOCK">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible" style="">Договор аренды</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style=""><div class="quicksearch input-group search">
+    <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input class="form-control js-quicksearch tt-input" placeholder="Поиск" typeahead-append-to-body="true" type="text" data-fnm-ignore="" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-172"></div></div></span>
+    <span class="input-group-addon quicksearch-button js-quicksearch-button" tabindex="-1">
+        <span class="glyphicon glyphicon-search"></span>
+    </span>
+</div></div>
+</div></div>
+</div><div class="xm-object xm-container xm-hidden-children" style="" direction="vertical" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="vertical"><div class="xm-object xm-container xm-hidden-children" style="" direction="horizontal" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="horizontal"><div class="xm-gui-labeled-object form-group" style="" xm-name="id_229" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_229" data-has-xm-object="true" data-xm-control-type="memo" data-linked-param="PSPC_CUSTOMTEXT" data-is-required-param="true" data-sub="SPECCLAUSEBLOCK">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="">Замечание</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="min-width: auto; flex-grow: initial; width: 400px;"><textarea class="xm-object xm-memo form-control" maxlength="510" rows="3"></textarea></div>
+</div><button class="xm-object xm-button btn btn-secondary" style="min-width: auto; width: 82px;" xm-caption="RU" xm-action-onclick="" xm-name="id_4562" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_4562" data-has-xm-object="true">
+    
+    <img class="xm-button-icon js-button-icon" style="" data-icon-name="">
+    <span class="btn-caption js-button-caption" style="">RU</span>
+</button></div>
+</div><div class="xm-object xm-container xm-hidden-children" style="" direction="horizontal" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="horizontal"><div class="xm-gui-labeled-object form-group" style="" xm-name="id_4002" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_4002" data-has-xm-object="true" data-xm-control-type="memo" data-linked-param="PSPC_CUSTOMTEXT_255" data-is-required-param="false" data-sub="SPECCLAUSEBLOCK">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="">Замечание</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="min-width: auto; flex-grow: initial; width: 400px;"><textarea class="xm-object xm-memo form-control" maxlength="350" rows="3"></textarea></div>
+</div><button class="xm-object xm-button btn btn-secondary" style="min-width: auto; width: 82px;" xm-caption="RU" xm-action-onclick="" xm-name="id_4563" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_4563" data-has-xm-object="true">
+    
+    <img class="xm-button-icon js-button-icon" style="" data-icon-name="">
+    <span class="btn-caption js-button-caption" style="">RU</span>
+</button></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_3774" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_3774" data-has-xm-object="true" data-xm-control-type="datepicker" data-linked-param="PSPC_CUSTOMTEXTDATE" data-is-required-param="false" data-sub="SPECCLAUSEBLOCK">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible" style="">Дата и время</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-labeled-object-control-datepicker-datetime" style=""><div class="xm-object input-group date">
+    <input type="text" class="xm-datepicker form-control js-datepicker">
+    <span class="input-group-addon">
+        <span class="glyphicon glyphicon-calendar"></span>
+    </span>
+</div></div>
+</div></div>
+</div><div class="xm-object xm-container xm-hidden-children" style="" direction="vertical" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="vertical"><div class="xm-object xm-container xm-hidden-children" style="" direction="vertical" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="vertical"><div class="xm-gui-labeled-object form-group" style="" xm-name="id_6679" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_6679" data-has-xm-object="true" data-xm-control-type="edit" data-linked-param="PSPC_CUSTOMTEXT" data-is-required-param="true" data-sub="SPECCLAUSEBLOCK">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="">Показатель давления(МПа)</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 82px;"><input class="xm-object xm-edit form-control js-xm-edit" type="text" value="" maxlength="510"></div>
+</div></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_5929" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_5929" data-has-xm-object="true" data-xm-control-type="quicksearch" data-linked-param="PSPC_OWNERWAG_ID1" data-is-required-param="false" data-sub="SPECCLAUSEBLOCK">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="">Собственник</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 400px;"><div class="quicksearch input-group search">
+    <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input class="form-control js-quicksearch tt-input" placeholder="Поиск" typeahead-append-to-body="true" type="text" data-fnm-ignore="" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-173"></div></div></span>
+    <span class="input-group-addon quicksearch-button js-quicksearch-button" tabindex="-1">
+        <span class="glyphicon glyphicon-search"></span>
+    </span>
+</div></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_5930" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_5930" data-has-xm-object="true" data-xm-control-type="quicksearch" data-linked-param="PSPC_OWNERWAG_ID1" data-is-required-param="false" data-sub="SPECCLAUSEBLOCK">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="">Арендатор</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 400px;"><div class="quicksearch input-group search">
+    <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input class="form-control js-quicksearch tt-input" placeholder="Поиск" typeahead-append-to-body="true" type="text" data-fnm-ignore="" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-174"></div></div></span>
+    <span class="input-group-addon quicksearch-button js-quicksearch-button" tabindex="-1">
+        <span class="glyphicon glyphicon-search"></span>
+    </span>
+</div></div>
+</div><div class="xm-object xm-container xm-hidden-children" style="" direction="horizontal" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="horizontal"><div class="xm-gui-labeled-object form-group" style="" xm-name="id_231" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_231" data-has-xm-object="true" data-xm-control-type="edit" data-linked-param="PSPC_OWNERWAG_COUNTRY" data-is-required-param="false" data-sub="SPECCLAUSEBLOCK">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible" style="">Страна собственности</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style=""><input class="xm-object xm-edit form-control js-xm-edit xm-edit--simpleShow" type="text" value=""></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_233" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_233" data-has-xm-object="true" data-xm-control-type="edit" data-linked-param="PSPC_OWNERWAG_NAME" data-is-required-param="false" data-sub="SPECCLAUSEBLOCK">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible" style="">Владелец</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style=""><input class="xm-object xm-edit form-control js-xm-edit xm-edit--simpleShow" type="text" value=""></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_230" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_230" data-has-xm-object="true" data-xm-control-type="edit" data-linked-param="PSPC_OWNERWAG_TYPE" data-is-required-param="false" data-sub="SPECCLAUSEBLOCK">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible" style="">Тип собственности</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style=""><input class="xm-object xm-edit form-control js-xm-edit xm-edit--simpleShow" type="text" value="" maxlength="255"></div>
+</div></div>
+</div><div class="xm-object xm-container xm-hidden-children" style="" direction="horizontal" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="horizontal"><div class="xm-gui-labeled-object form-group" style="" xm-name="id_235" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_235" data-has-xm-object="true" data-xm-control-type="numedit" data-linked-param="PSPC_MAXWEIGHT" data-is-required-param="false" data-sub="SPECCLAUSEBLOCK">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible" style="">Грузоподъемность</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style=""><input class="xm-object xm-edit form-control" type="text" value="" xm-displayformat="number"></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_236" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_236" data-has-xm-object="true" data-xm-control-type="numedit" data-linked-param="PSPC_WEIGHTTAREWAG" data-is-required-param="false" data-sub="SPECCLAUSEBLOCK">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible" style="">Масса тары</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style=""><input class="xm-object xm-edit form-control" type="text" value="" xm-displayformat="number"></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_237" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_237" data-has-xm-object="true" data-xm-control-type="numedit" data-linked-param="PSPC_AXLESWAG" data-is-required-param="false" data-sub="SPECCLAUSEBLOCK">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible" style="">Кол-во осей</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style=""><input class="xm-object xm-edit form-control" type="text" value="" xm-displayformat="number"></div>
+</div></div>
+</div></div>
+</div><div class="xm-object xm-container xm-hidden-children" style="" direction="vertical" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="vertical"><div class="xm-gui-labeled-object form-group" style="" xm-name="id_238" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_238" data-has-xm-object="true" data-xm-control-type="datepicker" data-linked-param="PSPC_CUSTOMTEXT_DATE" data-is-required-param="false" data-sub="SPECCLAUSEBLOCK">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible" style="">Дата и время</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-labeled-object-control-datepicker-datetime" style=""><div class="xm-object input-group date">
+    <input type="text" class="xm-datepicker form-control js-datepicker">
+    <span class="input-group-addon">
+        <span class="glyphicon glyphicon-calendar"></span>
+    </span>
+</div></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_239" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_239" data-has-xm-object="true" data-xm-control-type="edit" data-linked-param="PSPC_TRAINNMB" data-is-required-param="false" data-sub="SPECCLAUSEBLOCK">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible" style="">Номер поезда</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style=""><input class="xm-object xm-edit form-control js-xm-edit" type="text" value=""></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_240" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_240" data-has-xm-object="true" data-xm-control-type="numedit" data-linked-param="PSPC_AXLESQTY" data-is-required-param="false" data-sub="SPECCLAUSEBLOCK">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible" style="">Количество осей вагонов УКП</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style=""><input class="xm-object xm-edit form-control" type="text" value="" xm-displayformat="number"></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_241" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_241" data-has-xm-object="true" data-xm-control-type="numedit" data-linked-param="PSPC_CONTQTY" data-is-required-param="false" data-sub="SPECCLAUSEBLOCK">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible" style="">Количество условных контейнеров УКП</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style=""><input class="xm-object xm-edit form-control" type="text" value="" xm-displayformat="number"></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_242" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_242" data-has-xm-object="true" data-xm-control-type="numedit" data-linked-param="PSPC_WEIGHTGROSS" data-is-required-param="false" data-sub="SPECCLAUSEBLOCK">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible" style="">Масса брутто конт-ров</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style=""><input class="xm-object xm-edit form-control" type="text" value="" xm-displayformat="number"></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_243" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_243" data-has-xm-object="true" data-xm-control-type="edit" data-linked-param="PSPC_CONTRACTNO" data-is-required-param="true" data-sub="SPECCLAUSEBLOCK">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible" style="">Номер договора</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style=""><input class="xm-object xm-edit form-control js-xm-edit" type="text" value="" maxlength="50"></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_244" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_244" data-has-xm-object="true" data-xm-control-type="edit" data-linked-param="PSPC_OTSTSTATIONNAME" data-is-required-param="false" data-sub="SPECCLAUSEBLOCK">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible" style="">Согласованная станция</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style=""><input class="xm-object xm-edit form-control js-xm-edit" type="text" value="" maxlength="150"></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_245" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_245" data-has-xm-object="true" data-xm-control-type="edit" data-linked-param="PSPC_MWORKINGTIME" data-is-required-param="false" data-sub="SPECCLAUSEBLOCK">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="">Время проведения работ</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 82px;"><input class="xm-object xm-edit form-control js-xm-edit" type="text" value="" maxlength="4000"></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_246" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_246" data-has-xm-object="true" data-xm-control-type="edit" data-linked-param="PSPC_MACTNMB" data-is-required-param="false" data-sub="SPECCLAUSEBLOCK">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible" style="">Номер акта</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style=""><input class="xm-object xm-edit form-control js-xm-edit" type="text" value="" maxlength="4000"></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_247" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_247" data-has-xm-object="true" data-xm-control-type="datepicker" data-linked-param="PSPC_MACTDATE" data-is-required-param="false" data-sub="SPECCLAUSEBLOCK">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible" style="">Дата акта</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-labeled-object-control-datepicker-date" style=""><div class="xm-object input-group date">
+    <input type="text" class="xm-datepicker form-control js-datepicker">
+    <span class="input-group-addon">
+        <span class="glyphicon glyphicon-calendar"></span>
+    </span>
+</div></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_248" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_248" data-has-xm-object="true" data-xm-control-type="edit" data-linked-param="PSPC_MACTWAGQTY" data-is-required-param="false" data-sub="SPECCLAUSEBLOCK">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible" style="">Количество вагонов по акту</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style=""><input class="xm-object xm-edit form-control js-xm-edit" type="text" value="" maxlength="4000"></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_249" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_249" data-has-xm-object="true" data-xm-control-type="numedit" data-linked-param="PSPC_MDISTRQUOT" data-is-required-param="false" data-sub="SPECCLAUSEBLOCK">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible" style="">Коэффициент доплат к сборам по п. 2.8 ТР</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style=""><input class="xm-object xm-edit form-control" type="text" value="" xm-displayformat="number"></div>
+</div><div class="xm-object xm-container xm-hidden-children" style="" direction="vertical" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="vertical"><div class="xm-gui-labeled-object form-group" style="" xm-name="id_4584" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_4584" data-has-xm-object="true" data-xm-control-type="checkbox" data-linked-param="PSPC_DOGREMONT_WASH" data-is-required-param="false" data-sub="SPECCLAUSEBLOCK">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible" style="">На промывку/пропарку  и прочие договоры в ремонт</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-checkbox" style=""><label class="xm-checkbox">
+    <input type="checkbox" class="xm-object xm-checkbox__input form-control">
+    <span class="xm-checkbox__mark"></span>
+</label></div>
+</div></div>
+</div></div>
+</div><div class="xm-object xm-container xm-hidden-children" style="" direction="horizontal" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="horizontal"><div class="xm-gui-labeled-object form-group" style="" xm-name="id_4580" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_4580" data-has-xm-object="true" data-xm-control-type="quicksearch" data-linked-param="PSPC_DOGREMONT_DOCID" data-is-required-param="false" data-sub="SPECCLAUSEBLOCK">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible" style="">Договор на ремонт</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style=""><div class="quicksearch input-group search">
+    <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input class="form-control js-quicksearch tt-input" placeholder="Поиск" typeahead-append-to-body="true" type="text" data-fnm-ignore="" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-175"></div></div></span>
+    <span class="input-group-addon quicksearch-button js-quicksearch-button" tabindex="-1">
+        <span class="glyphicon glyphicon-search"></span>
+    </span>
+</div></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_4499" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_4499" data-has-xm-object="true" data-xm-control-type="edit" data-linked-param="PSPC_DOGREMONT_NUM" data-is-required-param="false" data-sub="SPECCLAUSEBLOCK">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible" style="">Номер</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style=""><input class="xm-object xm-edit form-control js-xm-edit xm-edit--simpleShow" type="text" value="" maxlength="50"></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_4500" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_4500" data-has-xm-object="true" data-xm-control-type="datepicker" data-linked-param="PSPC_DOGREMONT_DATE" data-is-required-param="false" data-sub="SPECCLAUSEBLOCK">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible" style="">Дата регистрации</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-labeled-object-control-datepicker-date" style=""><div class="xm-object input-group date">
+    <input type="text" class="xm-datepicker form-control js-datepicker">
+    <span class="input-group-addon">
+        <span class="glyphicon glyphicon-calendar"></span>
+    </span>
+</div></div>
+</div></div>
+</div><div class="xm-object xm-container xm-hidden-children" style="" direction="horizontal" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="horizontal"><div class="xm-gui-labeled-object form-group" style="" xm-name="id_250" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_250" data-has-xm-object="true" data-xm-control-type="edit" data-linked-param="PSPC_DOGREMONT_NUM" data-is-required-param="false" data-sub="SPECCLAUSEBLOCK">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible" style="">Номер договора</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style=""><input class="xm-object xm-edit form-control js-xm-edit" type="text" value="" maxlength="50"></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_251" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_251" data-has-xm-object="true" data-xm-control-type="datepicker" data-linked-param="PSPC_DOGREMONT_DATE" data-is-required-param="false" data-sub="SPECCLAUSEBLOCK">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible" style="">Дата договора</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-labeled-object-control-datepicker-date" style=""><div class="xm-object input-group date">
+    <input type="text" class="xm-datepicker form-control js-datepicker">
+    <span class="input-group-addon">
+        <span class="glyphicon glyphicon-calendar"></span>
+    </span>
+</div></div>
+</div></div>
+</div><div class="xm-object xm-container xm-hidden-children" style="" direction="vertical" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="vertical"><div class="xm-gui-labeled-object form-group" style="" xm-name="id_6221" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_6221" data-has-xm-object="true" data-xm-control-type="quicksearch" data-linked-param="PSPC_WR_ID" data-is-required-param="false" data-sub="SPECCLAUSEBLOCK">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="">Заявка на привлечение вагонов</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 300px;"><div class="quicksearch input-group search">
+    <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input class="form-control js-quicksearch tt-input" placeholder="Поиск" typeahead-append-to-body="true" type="text" data-fnm-ignore="" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-176"></div></div></span>
+    <span class="input-group-addon quicksearch-button js-quicksearch-button" tabindex="-1">
+        <span class="glyphicon glyphicon-search"></span>
+    </span>
+</div></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_6223" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_6223" data-has-xm-object="true" data-xm-control-type="quicksearch" data-linked-param="PSPC_WR_NUMLOAD" data-is-required-param="false" data-sub="SPECCLAUSEBLOCK">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="">Дата погрузки</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 300px;"><div class="quicksearch input-group search">
+    <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input class="form-control js-quicksearch tt-input" placeholder="Поиск" typeahead-append-to-body="true" type="text" data-fnm-ignore="" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-177"></div></div></span>
+    <span class="input-group-addon quicksearch-button js-quicksearch-button" tabindex="-1">
+        <span class="glyphicon glyphicon-search"></span>
+    </span>
+</div></div>
+</div></div>
+</div></div>
+</div><div class="xm-object xm-container" style="" direction="vertical" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="vertical"></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_4544" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_4544" data-has-xm-object="true" data-xm-control-type="combobox" data-linked-param="PSPC_FREEZTYPE" data-is-required-param="false" data-sub="SPECCLAUSEBLOCK">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="">Меры против смерзаемости</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-combobox-select2" style="width: 300px;"><div class="xm-object xm-combobox form-control select2-hidden-accessible" aria-hidden="true"></div><span class="select2 select2-container select2-container--bootstrap" dir="ltr" style="width: auto;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-i3nb-container"><span class="select2-selection__rendered" id="select2-i3nb-container"><span class="select2-selection__placeholder">Выберите элемент списка</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_4547" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_4547" data-has-xm-object="true" data-xm-control-type="edit" data-linked-param="PSPC_FREEZCOUNT" data-is-required-param="false" data-sub="SPECCLAUSEBLOCK">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="">Количество(проценты)</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 82px;"><input class="xm-object xm-edit form-control js-xm-edit" type="text" value="" maxlength="5"></div>
+</div><div class="xm-gui-labeled-object form-group" style="flex-shrink: 1; width: 100%;" xm-name="id_4546" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_4546" data-has-xm-object="true" data-xm-control-type="memo" data-linked-param="PSPC_FREEZREMARK" data-is-required-param="false" data-sub="SPECCLAUSEBLOCK">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="">Замечание</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="min-width: auto; flex-grow: 1; width: auto;"><textarea class="xm-object xm-memo form-control" maxlength="3800" rows="2"></textarea></div>
+</div><div class="xm-object xm-container xm-hidden-children" style="" direction="horizontal" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="horizontal"><div class="xm-gui-labeled-object form-group" style="" xm-name="id_4549" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_4549" data-has-xm-object="true" data-xm-control-type="quicksearch" data-linked-param="PSPC_AFG_DOCID" data-is-required-param="false" data-sub="SPECCLAUSEBLOCK">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible" style="">Согласие на прием смерзающегося груза</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style=""><div class="quicksearch input-group search">
+    <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input class="form-control js-quicksearch tt-input" placeholder="Поиск" typeahead-append-to-body="true" type="text" data-fnm-ignore="" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-178"></div></div></span>
+    <span class="input-group-addon quicksearch-button js-quicksearch-button" tabindex="-1">
+        <span class="glyphicon glyphicon-search"></span>
+    </span>
+</div></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_4551" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_4551" data-has-xm-object="true" data-xm-control-type="edit" data-linked-param="PSPC_AFG_DOCNUM" data-is-required-param="false" data-sub="SPECCLAUSEBLOCK">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="">Номер согласия</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 116px;"><input class="xm-object xm-edit form-control js-xm-edit xm-edit--simpleShow" type="text" value="" maxlength="20"></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_4552" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_4552" data-has-xm-object="true" data-xm-control-type="datepicker" data-linked-param="PSPC_AFG_DOCDATE" data-is-required-param="false" data-sub="SPECCLAUSEBLOCK">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible" style="">Дата согласия</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-labeled-object-control-datepicker-date" style=""><div class="xm-object input-group date">
+    <input type="text" class="xm-datepicker form-control js-datepicker">
+    <span class="input-group-addon">
+        <span class="glyphicon glyphicon-calendar"></span>
+    </span>
+</div></div>
+</div></div>
+</div><div class="xm-object xm-container xm-hidden-children" style="" direction="horizontal" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="horizontal"><div class="xm-gui-labeled-object form-group" style="" xm-name="id_4635" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_4635" data-has-xm-object="true" data-xm-control-type="quicksearch" data-linked-param="PSPC_RESP_TRANSID" data-is-required-param="false" data-sub="SPECCLAUSEBLOCK">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="">Ответственный по грузу</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 800px;"><div class="quicksearch input-group search">
+    <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input class="form-control js-quicksearch tt-input" placeholder="Поиск" typeahead-append-to-body="true" type="text" data-fnm-ignore="" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-179"></div></div></span>
+    <span class="input-group-addon quicksearch-button js-quicksearch-button" tabindex="-1">
+        <span class="glyphicon glyphicon-search"></span>
+    </span>
+</div></div>
+</div><div class="xm-gui-labeled-object form-group empty-label" style="" xm-name="id_4636" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_4636" data-has-xm-object="true" data-xm-control-type="edit" data-linked-param="PSPC_RESP_OKPO" data-is-required-param="false" data-sub="SPECCLAUSEBLOCK">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-align-left" style=""></label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 116px;"><input class="xm-object xm-edit form-control js-xm-edit xm-edit--simpleShow" type="text" value="" maxlength="10"></div>
+</div></div>
+</div><div class="xm-object xm-container xm-hidden-children" style="" direction="horizontal" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="horizontal"><div class="xm-gui-labeled-object form-group" style="" xm-name="id_4866" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_4866" data-has-xm-object="true" data-xm-control-type="edit" data-linked-param="PSPC_NUM_BOOKING" data-is-required-param="false" data-sub="SPECCLAUSEBLOCK">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible" style="">Номер букинга</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style=""><input class="xm-object xm-edit form-control js-xm-edit" type="text" value="" maxlength="20"></div>
+</div><div class="xm-gui-labeled-object form-group" style="" xm-name="id_4867" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_4867" data-has-xm-object="true" data-xm-control-type="datepicker" data-linked-param="PSPC_DATE_TRIP" data-is-required-param="false" data-sub="SPECCLAUSEBLOCK">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible" style="">Дата рейса парома</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control xm-gui-labeled-object-control-datepicker-date" style=""><div class="xm-object input-group date">
+    <input type="text" class="xm-datepicker form-control js-datepicker">
+    <span class="input-group-addon">
+        <span class="glyphicon glyphicon-calendar"></span>
+    </span>
+</div></div>
+</div></div>
+</div><div class="xm-object xm-container xm-hidden-children" style="" direction="horizontal" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="horizontal"><div class="xm-gui-labeled-object form-group" style="" xm-name="id_4893" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_4893" data-has-xm-object="true" data-xm-control-type="quicksearch" data-linked-param="PSPC_LOADORGNIZER_TRANSID" data-is-required-param="false" data-sub="SPECCLAUSEBLOCK">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="">Организатор погрузки</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 800px;"><div class="quicksearch input-group search">
+    <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input class="form-control js-quicksearch tt-input" placeholder="Поиск" typeahead-append-to-body="true" type="text" data-fnm-ignore="" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-180"></div></div></span>
+    <span class="input-group-addon quicksearch-button js-quicksearch-button" tabindex="-1">
+        <span class="glyphicon glyphicon-search"></span>
+    </span>
+</div></div>
+</div><div class="xm-gui-labeled-object form-group empty-label" style="" xm-name="id_4894" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_4894" data-has-xm-object="true" data-xm-control-type="edit" data-linked-param="PSPC_LOADORGNIZER_OKPO" data-is-required-param="false" data-sub="SPECCLAUSEBLOCK">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-align-left" style=""></label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 116px;"><input class="xm-object xm-edit form-control js-xm-edit xm-edit--simpleShow" type="text" value="" maxlength="10"></div>
+</div></div>
+</div><div class="xm-object xm-container xm-hidden-children" style="" direction="horizontal" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="horizontal"><div class="xm-gui-labeled-object form-group" style="" xm-name="id_4901" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_4901" data-has-xm-object="true" data-xm-control-type="quicksearch" data-linked-param="PSPC_UNLORGANIZER_TRANSID" data-is-required-param="false" data-sub="SPECCLAUSEBLOCK">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="">Организатор выгрузки</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 800px;"><div class="quicksearch input-group search">
+    <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input class="form-control js-quicksearch tt-input" placeholder="Поиск" typeahead-append-to-body="true" type="text" data-fnm-ignore="" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-181"></div></div></span>
+    <span class="input-group-addon quicksearch-button js-quicksearch-button" tabindex="-1">
+        <span class="glyphicon glyphicon-search"></span>
+    </span>
+</div></div>
+</div><div class="xm-gui-labeled-object form-group empty-label" style="" xm-name="id_4902" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_4902" data-has-xm-object="true" data-xm-control-type="edit" data-linked-param="PSPC_UNLORGANIZER_OKPO" data-is-required-param="false" data-sub="SPECCLAUSEBLOCK">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-align-left" style=""></label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 116px;"><input class="xm-object xm-edit form-control js-xm-edit xm-edit--simpleShow" type="text" value="" maxlength="10"></div>
+</div></div>
+</div><div class="xm-object xm-container xm-hidden-children" style="" direction="vertical" xm-visible="true" xm-enabled="true" xm-invalid="false" data-has-xm-object="true">
+    <div class="xm-container-label js-container-label" style="" xm-visible="false"></div>
+    <div data-xm-container="" class="xm-container-data js-container-data" style="" direction="vertical"><div class="xm-gui-labeled-object form-group" style="" xm-name="id_4965" xm-visible="false" xm-enabled="true" xm-invalid="false" data-hint-id="id_4965" data-has-xm-object="true" data-xm-control-type="quicksearch" data-linked-param="PSPC_OKUCONTRACT_ID" data-is-required-param="false" data-sub="SPECCLAUSEBLOCK">
+    <label class="xm-gui-labeled-object-label control-label js-gui-labeled-text xm-gui-labeled-object-label-visible xm-gui-labeled-object-label-align-left" style="">№ договора ОКУ</label>
+    <div class="xm-gui-labeled-object-control js-gui-labeled-control" style="width: 400px;"><div class="quicksearch input-group search">
+    <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input class="form-control js-quicksearch tt-input" placeholder="Поиск" typeahead-append-to-body="true" type="text" data-fnm-ignore="" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-182"></div></div></span>
+    <span class="input-group-addon quicksearch-button js-quicksearch-button" tabindex="-1">
+        <span class="glyphicon glyphicon-search"></span>
+    </span>
+</div></div>
+</div></div>
+</div></div>
+</div></div>
+</div></div>
+
+            <div class="dialog__footer js-dialog-footer">
+                <!-- Кнопки -->
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
